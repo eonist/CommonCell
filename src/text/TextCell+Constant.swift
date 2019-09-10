@@ -3,13 +3,15 @@ import UIKit
 /// Constants
 ///
 extension TextCell {
-    static let backgroundColor: UIColor = .blue
-    static let cellHeight: CGFloat = 124
-    class var cellReuseIdendifier: String { return "\(TextCell.self)" }
-    enum Margin {
-        static let horizontal: CGFloat = 12
-        static let horizontalSpaceBetween: CGFloat = 4
-        static let vertical: CGFloat = 12
-        static let verticalSpaceBetween: CGFloat = 4
-    }
+   open class var defaultReuseIdentifier: String { return "\(TextCell.self)" }
+   open class var backgroundColor: UIColor { return .blue }
+   open class var cellHeight: CGFloat { return 124 }
+}
+extension TextCell {
+   public enum Margin {
+      static let horizontal: CGFloat = 12
+      static let horizontalSpaceBetween: CGFloat = 4
+      static let vertical: CGFloat = 12
+      static let verticalSpaceBetween: CGFloat = 4
+   }
 }

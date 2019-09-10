@@ -1,6 +1,6 @@
 import Foundation
 
-struct TextCellData: CellDataKind {
-   let description: String
-   let content: String
+public struct TextCellData: CellDataKind {
+   public let description: String
+   public let content: String
 }
