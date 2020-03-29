@@ -10,10 +10,10 @@ extension TextCell {
 }
 extension TextCell {
    public enum Margin {
-      static let horizontal: CGFloat = 12
-      static let horizontalSpaceBetween: CGFloat = 4
-      static let vertical: CGFloat = 12
-      static let verticalSpaceBetween: CGFloat = 4
+      public static let horizontal: CGFloat = 12
+      public static let horizontalSpaceBetween: CGFloat = 4
+      public static let vertical: CGFloat = 12
+      public static let verticalSpaceBetween: CGFloat = 4
    }
 }
 #endif
