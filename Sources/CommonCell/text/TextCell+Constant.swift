@@ -1,11 +1,11 @@
 import UIKit
-///
-/// Constants
-///
+/**
+ * Constants
+ */
 extension TextCell {
-   open class var defaultReuseIdentifier: String { return "\(TextCell.self)" }
-   open class var backgroundColor: UIColor { return .blue }
-   open class var cellHeight: CGFloat { return 124 }
+   open class var defaultReuseIdentifier: String { "\(TextCell.self)" }
+   open class var backgroundColor: UIColor { .blue }
+   open class var cellHeight: CGFloat { 124 }
 }
 extension TextCell {
    public enum Margin {

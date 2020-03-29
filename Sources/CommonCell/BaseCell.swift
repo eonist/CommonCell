@@ -1,5 +1,7 @@
 import UIKit
-
+/**
+ * - Note I guess the purpouse of this class is to avoid adding the required init in subClasses?
+ */
 open class BaseCell: UITableViewCell {
     open var data: CellDataKind? // Stores cellData
     /**
@@ -7,7 +9,7 @@ open class BaseCell: UITableViewCell {
      */
     override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.selectionStyle = .none // disables the selection highlighting
+        self.selectionStyle = .none // Disables the selection highlighting
     }
     /**
      * Boilerplate

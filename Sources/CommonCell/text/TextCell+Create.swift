@@ -1,14 +1,14 @@
 import UIKit
 import With
-///
-/// Create
-///
+/**
+ * Create
+ */
 extension TextCell {
-   ///
-   /// Create Title Label
-   ///
+   /**
+    * Create Title Label
+    */
    @objc open func createDescriptionLabel() -> UILabel {
-      return with(.init()) {
+      with(.init()) {
          $0.text = "title"
          $0.textColor = .white // .black
          $0.backgroundColor = .clear
@@ -23,11 +23,11 @@ extension TextCell {
          $0.setContentHuggingPriority(.init(500), for: .horizontal) // Makes sure the label retians it's instrinsic width, as oppose to sticking to the textField left anchor
       }
    }
-   ///
-   /// Create Content TextField
-   ///
+   /**
+    * Create Content TextField
+    */
    @objc open func createContentTextField() -> UITextField {
-      return with(.init()) {
+      with(.init()) {
          $0.isUserInteractionEnabled = false
          $0.textAlignment = .right
          $0.textColor = .gray
@@ -39,13 +39,13 @@ extension TextCell {
       }
    }
 }
-///
-/// Constraints
-///
+/**
+ * Constraints
+ */
 extension TextCell {
-   ///
-   /// - Description: Configure contentTextField constraints
-   ///
+   /**
+    * - Description: Configure contentTextField constraints
+    */
    @objc open func configContentTextFieldConstraints(_ tf: UITextField) {
       with(tf) {
          $0.translatesAutoresizingMaskIntoConstraints = false

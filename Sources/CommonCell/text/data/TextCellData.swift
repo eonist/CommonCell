@@ -1,5 +1,7 @@
 import Foundation
-
+/**
+ * Container for data for description and content
+ */
 public struct TextCellData: CellDataKind {
    public let description: String
    public let content: String
