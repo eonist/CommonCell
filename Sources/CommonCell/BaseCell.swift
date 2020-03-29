@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 /**
  * - Note I guess the purpouse of this class is to avoid adding the required init in subClasses?
@@ -19,3 +20,4 @@ open class BaseCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
+#endif

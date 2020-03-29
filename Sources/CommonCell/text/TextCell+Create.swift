@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 import With
 /**
@@ -58,3 +59,4 @@ extension TextCell {
       }
    }
 }
+#endif

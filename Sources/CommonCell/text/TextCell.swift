@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 import ReusableCell
 /**
@@ -18,3 +19,4 @@ open class TextCell: BaseCell, ReusableCellKind {
         }
     }
 }
+#endif

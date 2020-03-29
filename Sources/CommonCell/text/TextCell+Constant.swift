@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 /**
  * Constants
@@ -15,3 +16,4 @@ extension TextCell {
       static let verticalSpaceBetween: CGFloat = 4
    }
 }
+#endif
