@@ -4,7 +4,7 @@ import UIKit
  * Constants
  */
 extension TextCell {
-   open class var defaultReuseIdentifier: String { "\(TextCell.self)" }
+   override open class var defaultReuseIdentifier: String { "\(TextCell.self)" }
    open class var backgroundColor: UIColor { .blue }
    open class var cellHeight: CGFloat { 124 }
 }

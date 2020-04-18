@@ -1,11 +1,10 @@
 #if os(iOS)
 import UIKit
-import ReusableCell
 /**
  * - Abstract: Provides a way to show a DescriptionLabel and and InputTextField in a TableCell [Desc   Input]
  * - Remark: Left-aligned Label and Right-Aligned content TextField
  */
-open class TextCell: BaseCell, ReusableCellKind {
+open class TextCell: BaseCell {
    public lazy var descriptionLabel: UILabel = createDescriptionLabel()
    public lazy var contentTextField: UITextField = createContentTextField()
    /**
