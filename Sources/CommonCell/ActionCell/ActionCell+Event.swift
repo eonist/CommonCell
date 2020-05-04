@@ -1,3 +1,4 @@
+#if os(iOS)
 import Foundation
 
 extension ActionCell {
@@ -9,3 +10,4 @@ extension ActionCell {
       onAction(self, value)
    }
 }
+#endif
