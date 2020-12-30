@@ -1,4 +1,4 @@
-#if os(iOS)
+#if os(macOS)
 import Foundation
 /**
  * Container for data for title and value
