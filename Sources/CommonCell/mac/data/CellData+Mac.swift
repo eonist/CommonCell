@@ -6,5 +6,9 @@ import Foundation
 public struct CellData: CellDataKind {
    public let titleText: String
    public let value: Any?
+   public init(titleText: String, value: Any?) {
+      self.titleText = titleText
+      self.value = value
+   }
 }
 #endif
