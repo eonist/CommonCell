@@ -9,24 +9,6 @@
           "revision": "1892afdc517e4c8fc74e1f97c92b29030f8292bb",
           "version": null
         }
-      },
-      {
-        "package": "Spatial",
-        "repositoryURL": "https://github.com/eonist/Spatial.git",
-        "state": {
-          "branch": "master",
-          "revision": "1cd0ddcfae1889b1ecdbd82511a385863b7accda",
-          "version": null
-        }
-      },
-      {
-        "package": "With",
-        "repositoryURL": "https://github.com/eonist/With.git",
-        "state": {
-          "branch": "master",
-          "revision": "140cd19586482e8f14a5ce971c675c69f1e4f916",
-          "version": null
-        }
       }
     ]
   },

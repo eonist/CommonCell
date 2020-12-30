@@ -111,6 +111,7 @@
 		9D10A1E92326718400513EF4 /* CommonCellExample */ = {
 			isa = PBXGroup;
 			children = (
+				F1BDC8C62430E3BB00421957 /* text */,
 				9D10A1EA2326718400513EF4 /* AppDelegate.swift */,
 				9D10A1F12326718500513EF4 /* Assets.xcassets */,
 				9D10A1F32326718500513EF4 /* LaunchScreen.storyboard */,
@@ -131,7 +132,6 @@
 			children = (
 				F14BFA7624606C3A00C4C88B /* BaseCell */,
 				F14BFA6824606C1E00C4C88B /* ActionCell */,
-				F1BDC8C62430E3BB00421957 /* text */,
 				F1BDC8CC2430E3BB00421957 /* data */,
 			);
 			path = ios;
