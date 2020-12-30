@@ -8,6 +8,6 @@ public protocol ActionCellKind: BaseCellKind {
    /**
     * height of cell
     */
-   public static var height: CGFloat { get }
+   static var height: CGFloat { get }
 }
 #endif
