@@ -1,4 +1,4 @@
-import UIKit
+#if os(iOS)
 import ReusableCell
 /**
  * Container for data for title and value
@@ -12,3 +12,4 @@ public struct CellData: CellDataKind {
       self.value = value
    }
 }
+#endif
