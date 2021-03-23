@@ -13,7 +13,7 @@ public struct GeneralCellType {
     *   - title: title
     *   - value: value
     */
-   init(type: ActionCellKind.Type, title: String, value: Any? = nil) {
+   public init(type: ActionCellKind.Type, title: String, value: Any? = nil) {
       self.type = type
       self.title = title
       self.value = value
