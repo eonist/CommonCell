@@ -31,7 +31,7 @@ open class BaseCell: NSTableCellView, BaseCellKind {
  * Const
  */
 extension BaseCell {
-   @objc open class var defaultReuseIdentifier: String { "\(BaseCell.self)" }
+   @objc open class var defaultReuseIdentifier: String { String(describing: self) }
 }
 
 /**
