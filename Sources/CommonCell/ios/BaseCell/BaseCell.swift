@@ -25,6 +25,6 @@ open class BaseCell: UITableViewCell, ReusableCellKind {
  * Const
  */
 extension BaseCell {
-   @objc open class var defaultReuseIdentifier: String { "\(BaseCell.self)" }
+   @objc open class var defaultReuseIdentifier: String { String(describing: self) }
 }
 #endif
