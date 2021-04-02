@@ -1,6 +1,9 @@
 import UIKit
 
 @UIApplicationMain
+/**
+ * - Fixme: ⚠️️ Add better example
+ */
 class AppDelegate: UIResponder, UIApplicationDelegate {
    lazy var window: UIWindow? = {
       let win = UIWindow(frame: UIScreen.main.bounds)

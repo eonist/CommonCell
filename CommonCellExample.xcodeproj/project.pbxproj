@@ -10,29 +10,32 @@
 		9D10A1EB2326718400513EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10A1EA2326718400513EF4 /* AppDelegate.swift */; };
 		9D10A1F22326718500513EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D10A1F12326718500513EF4 /* Assets.xcassets */; };
 		9D10A1F52326718500513EF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D10A1F32326718500513EF4 /* LaunchScreen.storyboard */; };
-		F10F6C54259CB9A20023F753 /* ActionCell+Event+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F6C4B259CB9A20023F753 /* ActionCell+Event+Mac.swift */; };
-		F10F6C55259CB9A20023F753 /* ActionCell+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F6C4C259CB9A20023F753 /* ActionCell+Mac.swift */; };
-		F10F6C56259CB9A20023F753 /* ActionCellKind+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F6C4D259CB9A20023F753 /* ActionCellKind+Mac.swift */; };
-		F10F6C57259CB9A20023F753 /* ActionCell+Const+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F6C4E259CB9A20023F753 /* ActionCell+Const+Mac.swift */; };
-		F10F6C58259CB9A20023F753 /* BaseCellKind+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F6C4F259CB9A20023F753 /* BaseCellKind+Mac.swift */; };
-		F10F6C59259CB9A20023F753 /* BaseCell+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F6C50259CB9A20023F753 /* BaseCell+Mac.swift */; };
-		F10F6C5A259CB9A20023F753 /* CellData+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F6C52259CB9A20023F753 /* CellData+Mac.swift */; };
-		F10F6C5B259CB9A20023F753 /* CellDataKind+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F6C53259CB9A20023F753 /* CellDataKind+Mac.swift */; };
-		F14BFA7024606C1E00C4C88B /* ActionCell+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14BFA6924606C1E00C4C88B /* ActionCell+Dequeue.swift */; };
-		F14BFA7124606C1E00C4C88B /* ActionCell+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14BFA6A24606C1E00C4C88B /* ActionCell+Const.swift */; };
-		F14BFA7224606C1E00C4C88B /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14BFA6B24606C1E00C4C88B /* ActionCell.swift */; };
-		F14BFA7324606C1E00C4C88B /* BaseCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14BFA6D24606C1E00C4C88B /* BaseCellKind.swift */; };
-		F14BFA7424606C1E00C4C88B /* ActionCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14BFA6E24606C1E00C4C88B /* ActionCellKind.swift */; };
-		F14BFA7524606C1E00C4C88B /* ActionCell+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14BFA6F24606C1E00C4C88B /* ActionCell+Event.swift */; };
+		F1076CF4261728350073A3B7 /* BaseCell+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CDB261728350073A3B7 /* BaseCell+Mac.swift */; };
+		F1076CF5261728350073A3B7 /* BaseCellKind+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CDC261728350073A3B7 /* BaseCellKind+Mac.swift */; };
+		F1076CF6261728350073A3B7 /* CellData+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CDE261728350073A3B7 /* CellData+Mac.swift */; };
+		F1076CF7261728350073A3B7 /* CellDataKind+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CDF261728350073A3B7 /* CellDataKind+Mac.swift */; };
+		F1076CF8261728350073A3B7 /* ActionCell+Event+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CE1261728350073A3B7 /* ActionCell+Event+Mac.swift */; };
+		F1076CF9261728350073A3B7 /* ActionCell+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CE2261728350073A3B7 /* ActionCell+Mac.swift */; };
+		F1076CFA261728350073A3B7 /* ActionCellKind+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CE3261728350073A3B7 /* ActionCellKind+Mac.swift */; };
+		F1076CFB261728350073A3B7 /* ActionCell+Const+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CE4261728350073A3B7 /* ActionCell+Const+Mac.swift */; };
+		F1076D08261728890073A3B7 /* GeneralCellType+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076D07261728890073A3B7 /* GeneralCellType+Mac.swift */; };
+		F1076D092617290B0073A3B7 /* GeneralCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CEB261728350073A3B7 /* GeneralCellType.swift */; };
+		F1076D0A2617290B0073A3B7 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CE7261728350073A3B7 /* BaseCell.swift */; };
+		F1076D0B2617290B0073A3B7 /* CellDataKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CE9261728350073A3B7 /* CellDataKind.swift */; };
+		F1076D0C2617290B0073A3B7 /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CEA261728350073A3B7 /* CellData.swift */; };
+		F1076D0D2617290B0073A3B7 /* ActionCell+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CED261728350073A3B7 /* ActionCell+Dequeue.swift */; };
+		F1076D0E2617290B0073A3B7 /* ActionCell+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CEE261728350073A3B7 /* ActionCell+Const.swift */; };
+		F1076D0F2617290B0073A3B7 /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CEF261728350073A3B7 /* ActionCell.swift */; };
+		F1076D102617290B0073A3B7 /* ActionCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CF0261728350073A3B7 /* ActionCellKind.swift */; };
+		F1076D112617290B0073A3B7 /* BaseCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CF2261728350073A3B7 /* BaseCellKind.swift */; };
+		F1076D122617290B0073A3B7 /* ActionCell+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1076CF3261728350073A3B7 /* ActionCell+Event.swift */; };
 		F1BDC8B92430E07700421957 /* ReusableCell in Frameworks */ = {isa = PBXBuildFile; productRef = F1BDC8B82430E07700421957 /* ReusableCell */; };
 		F1BDC8BC2430E09A00421957 /* Spatial in Frameworks */ = {isa = PBXBuildFile; productRef = F1BDC8BB2430E09A00421957 /* Spatial */; };
 		F1BDC8C12430E39000421957 /* With in Frameworks */ = {isa = PBXBuildFile; productRef = F1BDC8C02430E39000421957 /* With */; };
-		F1BDC8CF2430E3BB00421957 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BDC8C52430E3BB00421957 /* BaseCell.swift */; };
 		F1BDC8D02430E3BB00421957 /* TextCell+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BDC8C72430E3BB00421957 /* TextCell+Create.swift */; };
 		F1BDC8D12430E3BB00421957 /* TextCell+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BDC8C82430E3BB00421957 /* TextCell+Constant.swift */; };
 		F1BDC8D22430E3BB00421957 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BDC8C92430E3BB00421957 /* TextCell.swift */; };
 		F1BDC8D32430E3BB00421957 /* TextCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BDC8CB2430E3BB00421957 /* TextCellData.swift */; };
-		F1BDC8D42430E3BB00421957 /* CellDataKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BDC8CD2430E3BB00421957 /* CellDataKind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,26 +57,29 @@
 		9D10A1F12326718500513EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D10A1F42326718500513EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D10A1F62326718500513EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F10F6C4B259CB9A20023F753 /* ActionCell+Event+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Event+Mac.swift"; sourceTree = "<group>"; };
-		F10F6C4C259CB9A20023F753 /* ActionCell+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Mac.swift"; sourceTree = "<group>"; };
-		F10F6C4D259CB9A20023F753 /* ActionCellKind+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCellKind+Mac.swift"; sourceTree = "<group>"; };
-		F10F6C4E259CB9A20023F753 /* ActionCell+Const+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Const+Mac.swift"; sourceTree = "<group>"; };
-		F10F6C4F259CB9A20023F753 /* BaseCellKind+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseCellKind+Mac.swift"; sourceTree = "<group>"; };
-		F10F6C50259CB9A20023F753 /* BaseCell+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseCell+Mac.swift"; sourceTree = "<group>"; };
-		F10F6C52259CB9A20023F753 /* CellData+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CellData+Mac.swift"; sourceTree = "<group>"; };
-		F10F6C53259CB9A20023F753 /* CellDataKind+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CellDataKind+Mac.swift"; sourceTree = "<group>"; };
-		F14BFA6924606C1E00C4C88B /* ActionCell+Dequeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Dequeue.swift"; sourceTree = "<group>"; };
-		F14BFA6A24606C1E00C4C88B /* ActionCell+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Const.swift"; sourceTree = "<group>"; };
-		F14BFA6B24606C1E00C4C88B /* ActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCell.swift; sourceTree = "<group>"; };
-		F14BFA6D24606C1E00C4C88B /* BaseCellKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseCellKind.swift; path = ../ActionCell/Protocol/BaseCellKind.swift; sourceTree = "<group>"; };
-		F14BFA6E24606C1E00C4C88B /* ActionCellKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCellKind.swift; sourceTree = "<group>"; };
-		F14BFA6F24606C1E00C4C88B /* ActionCell+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Event.swift"; sourceTree = "<group>"; };
-		F1BDC8C52430E3BB00421957 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		F1076CDB261728350073A3B7 /* BaseCell+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseCell+Mac.swift"; sourceTree = "<group>"; };
+		F1076CDC261728350073A3B7 /* BaseCellKind+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseCellKind+Mac.swift"; sourceTree = "<group>"; };
+		F1076CDE261728350073A3B7 /* CellData+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CellData+Mac.swift"; sourceTree = "<group>"; };
+		F1076CDF261728350073A3B7 /* CellDataKind+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CellDataKind+Mac.swift"; sourceTree = "<group>"; };
+		F1076CE1261728350073A3B7 /* ActionCell+Event+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Event+Mac.swift"; sourceTree = "<group>"; };
+		F1076CE2261728350073A3B7 /* ActionCell+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Mac.swift"; sourceTree = "<group>"; };
+		F1076CE3261728350073A3B7 /* ActionCellKind+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCellKind+Mac.swift"; sourceTree = "<group>"; };
+		F1076CE4261728350073A3B7 /* ActionCell+Const+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Const+Mac.swift"; sourceTree = "<group>"; };
+		F1076CE7261728350073A3B7 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		F1076CE9261728350073A3B7 /* CellDataKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDataKind.swift; sourceTree = "<group>"; };
+		F1076CEA261728350073A3B7 /* CellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
+		F1076CEB261728350073A3B7 /* GeneralCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralCellType.swift; sourceTree = "<group>"; };
+		F1076CED261728350073A3B7 /* ActionCell+Dequeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Dequeue.swift"; sourceTree = "<group>"; };
+		F1076CEE261728350073A3B7 /* ActionCell+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Const.swift"; sourceTree = "<group>"; };
+		F1076CEF261728350073A3B7 /* ActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCell.swift; sourceTree = "<group>"; };
+		F1076CF0261728350073A3B7 /* ActionCellKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCellKind.swift; sourceTree = "<group>"; };
+		F1076CF2261728350073A3B7 /* BaseCellKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellKind.swift; sourceTree = "<group>"; };
+		F1076CF3261728350073A3B7 /* ActionCell+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionCell+Event.swift"; sourceTree = "<group>"; };
+		F1076D07261728890073A3B7 /* GeneralCellType+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeneralCellType+Mac.swift"; sourceTree = "<group>"; };
 		F1BDC8C72430E3BB00421957 /* TextCell+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextCell+Create.swift"; sourceTree = "<group>"; };
 		F1BDC8C82430E3BB00421957 /* TextCell+Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextCell+Constant.swift"; sourceTree = "<group>"; };
 		F1BDC8C92430E3BB00421957 /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		F1BDC8CB2430E3BB00421957 /* TextCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCellData.swift; sourceTree = "<group>"; };
-		F1BDC8CD2430E3BB00421957 /* CellDataKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDataKind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,64 +133,100 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F10F6C1D259CB5F70023F753 /* ios */ = {
+		F1076CD9261728350073A3B7 /* CommonCell */ = {
 			isa = PBXGroup;
 			children = (
-				F14BFA7624606C3A00C4C88B /* BaseCell */,
-				F14BFA6824606C1E00C4C88B /* ActionCell */,
-				F1BDC8CC2430E3BB00421957 /* data */,
+				F1076CDA261728350073A3B7 /* macOS */,
+				F1076CE5261728350073A3B7 /* iOS */,
 			);
-			path = ios;
+			path = CommonCell;
 			sourceTree = "<group>";
 		};
-		F10F6C1E259CB6030023F753 /* mac */ = {
+		F1076CDA261728350073A3B7 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				F10F6C4A259CB9A20023F753 /* ActionCell */,
-				F10F6C50259CB9A20023F753 /* BaseCell+Mac.swift */,
-				F10F6C4F259CB9A20023F753 /* BaseCellKind+Mac.swift */,
-				F10F6C53259CB9A20023F753 /* CellDataKind+Mac.swift */,
-				F10F6C51259CB9A20023F753 /* data */,
+				F1076D07261728890073A3B7 /* GeneralCellType+Mac.swift */,
+				F1076D06261728430073A3B7 /* BaseCell */,
+				F1076CDD261728350073A3B7 /* data */,
+				F1076CE0261728350073A3B7 /* ActionCell */,
 			);
-			path = mac;
+			path = macOS;
 			sourceTree = "<group>";
 		};
-		F10F6C4A259CB9A20023F753 /* ActionCell */ = {
+		F1076CDD261728350073A3B7 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				F10F6C4B259CB9A20023F753 /* ActionCell+Event+Mac.swift */,
-				F10F6C4C259CB9A20023F753 /* ActionCell+Mac.swift */,
-				F10F6C4D259CB9A20023F753 /* ActionCellKind+Mac.swift */,
-				F10F6C4E259CB9A20023F753 /* ActionCell+Const+Mac.swift */,
-			);
-			path = ActionCell;
-			sourceTree = "<group>";
-		};
-		F10F6C51259CB9A20023F753 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				F10F6C52259CB9A20023F753 /* CellData+Mac.swift */,
+				F1076CDF261728350073A3B7 /* CellDataKind+Mac.swift */,
+				F1076CDE261728350073A3B7 /* CellData+Mac.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
 		};
-		F14BFA6824606C1E00C4C88B /* ActionCell */ = {
+		F1076CE0261728350073A3B7 /* ActionCell */ = {
 			isa = PBXGroup;
 			children = (
-				F14BFA6924606C1E00C4C88B /* ActionCell+Dequeue.swift */,
-				F14BFA6E24606C1E00C4C88B /* ActionCellKind.swift */,
-				F14BFA6A24606C1E00C4C88B /* ActionCell+Const.swift */,
-				F14BFA6B24606C1E00C4C88B /* ActionCell.swift */,
-				F14BFA6F24606C1E00C4C88B /* ActionCell+Event.swift */,
+				F1076CE1261728350073A3B7 /* ActionCell+Event+Mac.swift */,
+				F1076CE2261728350073A3B7 /* ActionCell+Mac.swift */,
+				F1076CE3261728350073A3B7 /* ActionCellKind+Mac.swift */,
+				F1076CE4261728350073A3B7 /* ActionCell+Const+Mac.swift */,
 			);
 			path = ActionCell;
 			sourceTree = "<group>";
 		};
-		F14BFA7624606C3A00C4C88B /* BaseCell */ = {
+		F1076CE5261728350073A3B7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F14BFA6D24606C1E00C4C88B /* BaseCellKind.swift */,
-				F1BDC8C52430E3BB00421957 /* BaseCell.swift */,
+				F1076CEB261728350073A3B7 /* GeneralCellType.swift */,
+				F1076CE6261728350073A3B7 /* BaseCell */,
+				F1076CE8261728350073A3B7 /* data */,
+				F1076CEC261728350073A3B7 /* ActionCell */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		F1076CE6261728350073A3B7 /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1076CE7261728350073A3B7 /* BaseCell.swift */,
+			);
+			path = BaseCell;
+			sourceTree = "<group>";
+		};
+		F1076CE8261728350073A3B7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F1076CE9261728350073A3B7 /* CellDataKind.swift */,
+				F1076CEA261728350073A3B7 /* CellData.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		F1076CEC261728350073A3B7 /* ActionCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1076CED261728350073A3B7 /* ActionCell+Dequeue.swift */,
+				F1076CEE261728350073A3B7 /* ActionCell+Const.swift */,
+				F1076CEF261728350073A3B7 /* ActionCell.swift */,
+				F1076CF0261728350073A3B7 /* ActionCellKind.swift */,
+				F1076CF1261728350073A3B7 /* Protocol */,
+				F1076CF3261728350073A3B7 /* ActionCell+Event.swift */,
+			);
+			path = ActionCell;
+			sourceTree = "<group>";
+		};
+		F1076CF1261728350073A3B7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F1076CF2261728350073A3B7 /* BaseCellKind.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F1076D06261728430073A3B7 /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1076CDB261728350073A3B7 /* BaseCell+Mac.swift */,
+				F1076CDC261728350073A3B7 /* BaseCellKind+Mac.swift */,
 			);
 			path = BaseCell;
 			sourceTree = "<group>";
@@ -192,18 +234,9 @@
 		F1BDC8C22430E3BB00421957 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F1BDC8C32430E3BB00421957 /* CommonCell */,
+				F1076CD9261728350073A3B7 /* CommonCell */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		F1BDC8C32430E3BB00421957 /* CommonCell */ = {
-			isa = PBXGroup;
-			children = (
-				F10F6C1E259CB6030023F753 /* mac */,
-				F10F6C1D259CB5F70023F753 /* ios */,
-			);
-			path = CommonCell;
 			sourceTree = "<group>";
 		};
 		F1BDC8C62430E3BB00421957 /* text */ = {
@@ -221,14 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				F1BDC8CB2430E3BB00421957 /* TextCellData.swift */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		F1BDC8CC2430E3BB00421957 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				F1BDC8CD2430E3BB00421957 /* CellDataKind.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -335,26 +360,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1076D112617290B0073A3B7 /* BaseCellKind.swift in Sources */,
+				F1076D0B2617290B0073A3B7 /* CellDataKind.swift in Sources */,
+				F1076D102617290B0073A3B7 /* ActionCellKind.swift in Sources */,
+				F1076D092617290B0073A3B7 /* GeneralCellType.swift in Sources */,
+				F1076D08261728890073A3B7 /* GeneralCellType+Mac.swift in Sources */,
+				F1076CF4261728350073A3B7 /* BaseCell+Mac.swift in Sources */,
 				F1BDC8D12430E3BB00421957 /* TextCell+Constant.swift in Sources */,
+				F1076D0E2617290B0073A3B7 /* ActionCell+Const.swift in Sources */,
+				F1076D0F2617290B0073A3B7 /* ActionCell.swift in Sources */,
+				F1076D0A2617290B0073A3B7 /* BaseCell.swift in Sources */,
+				F1076CF8261728350073A3B7 /* ActionCell+Event+Mac.swift in Sources */,
+				F1076CF7261728350073A3B7 /* CellDataKind+Mac.swift in Sources */,
 				F1BDC8D02430E3BB00421957 /* TextCell+Create.swift in Sources */,
-				F10F6C56259CB9A20023F753 /* ActionCellKind+Mac.swift in Sources */,
-				F14BFA7024606C1E00C4C88B /* ActionCell+Dequeue.swift in Sources */,
-				F10F6C58259CB9A20023F753 /* BaseCellKind+Mac.swift in Sources */,
-				F1BDC8CF2430E3BB00421957 /* BaseCell.swift in Sources */,
-				F14BFA7224606C1E00C4C88B /* ActionCell.swift in Sources */,
-				F14BFA7424606C1E00C4C88B /* ActionCellKind.swift in Sources */,
-				F14BFA7124606C1E00C4C88B /* ActionCell+Const.swift in Sources */,
+				F1076CF6261728350073A3B7 /* CellData+Mac.swift in Sources */,
+				F1076CF9261728350073A3B7 /* ActionCell+Mac.swift in Sources */,
+				F1076D0C2617290B0073A3B7 /* CellData.swift in Sources */,
+				F1076CFA261728350073A3B7 /* ActionCellKind+Mac.swift in Sources */,
 				F1BDC8D22430E3BB00421957 /* TextCell.swift in Sources */,
-				F10F6C5A259CB9A20023F753 /* CellData+Mac.swift in Sources */,
-				F10F6C55259CB9A20023F753 /* ActionCell+Mac.swift in Sources */,
-				F10F6C5B259CB9A20023F753 /* CellDataKind+Mac.swift in Sources */,
-				F10F6C57259CB9A20023F753 /* ActionCell+Const+Mac.swift in Sources */,
-				F1BDC8D42430E3BB00421957 /* CellDataKind.swift in Sources */,
+				F1076CF5261728350073A3B7 /* BaseCellKind+Mac.swift in Sources */,
+				F1076CFB261728350073A3B7 /* ActionCell+Const+Mac.swift in Sources */,
+				F1076D122617290B0073A3B7 /* ActionCell+Event.swift in Sources */,
+				F1076D0D2617290B0073A3B7 /* ActionCell+Dequeue.swift in Sources */,
 				9D10A1EB2326718400513EF4 /* AppDelegate.swift in Sources */,
-				F14BFA7324606C1E00C4C88B /* BaseCellKind.swift in Sources */,
-				F10F6C59259CB9A20023F753 /* BaseCell+Mac.swift in Sources */,
-				F10F6C54259CB9A20023F753 /* ActionCell+Event+Mac.swift in Sources */,
-				F14BFA7524606C1E00C4C88B /* ActionCell+Event.swift in Sources */,
 				F1BDC8D32430E3BB00421957 /* TextCellData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
