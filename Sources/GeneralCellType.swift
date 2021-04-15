@@ -1,4 +1,3 @@
-#if os(macOS)
 import Foundation
 /**
  * In this table: all Cells must have these attributes
@@ -32,4 +31,3 @@ extension GeneralCellType {
       .init(titleText: self.title, value: self.value)
    }
 }
-#endif
