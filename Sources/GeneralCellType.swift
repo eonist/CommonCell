@@ -1,19 +1,21 @@
-#if os(iOS)
+#if os(macOS)
 import Foundation
 /**
  * In this table: all Cells must have these attributes
+ * - Fixme: ⚠️️ Rename to InputCellType? InputCellKind? CompositeCellKind?
  */
 public struct GeneralCellType {
-   public let type: ActionCellKind.Type
+   public let type: String
    public let title: String
    public let value: Any?
    /**
+    * - Fixme: ⚠️️ explain why we set the type
     * - Parameters:
-    *   - type: type of cell
+    *   - type: the cell type
     *   - title: title
     *   - value: value
     */
-   public init(type: ActionCellKind.Type, title: String, value: Any? = nil) {
+   public init(type: String, title: String, value: Any? = nil) {
       self.type = type
       self.title = title
       self.value = value
