@@ -7,7 +7,7 @@ public protocol InputCellKind {
 public typealias InputCellKinds = [InputCellKind]
 extension InputCellKinds {
    /**
-    * Find first for title
+    * Find the first for title
     */
    public func first(title: String) -> InputCellKind? {
       self.first { $0.titleText == title }
