@@ -13,4 +13,4 @@ extension NSTableView {
       }
    }
 }
-#if os(macOS)#endif
+#endif
