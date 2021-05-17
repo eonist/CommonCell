@@ -1,5 +1,5 @@
+#if os(macOS)
 import Cocoa
-import CommonCell
 /**
  * Static util methods
  * - Fixme: ⚠️️ move to commonCell? and add OS speccific closure?
@@ -22,3 +22,4 @@ public enum InputCellHelper {
       (getCell(table: table, title: title) as? InputCellKind)?.inputText
    }
 }
+#endif

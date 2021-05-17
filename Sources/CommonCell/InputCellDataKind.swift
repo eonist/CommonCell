@@ -1,5 +1,4 @@
 import Foundation
-import CommonCell
 /**
  * - Fixme: ⚠️️ remove this?, maybe not, used by InputCellData
  * - Fixme: ⚠️️ maybe also make ReadableCellDataKind
