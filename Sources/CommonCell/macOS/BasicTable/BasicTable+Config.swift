@@ -1,3 +1,4 @@
+#if os(macOS)
 import Cocoa
 /**
  * - Fixme: ⚠️️ Reuse this part of the code. 4 other Tables use the same code
@@ -20,3 +21,4 @@ extension BasicTable {
 //      self.setContentOffset(.init(x: 0, y: 0)) // add content offset, to make room for header
    }
 }
+#endif

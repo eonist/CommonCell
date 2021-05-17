@@ -1,3 +1,4 @@
+#if os(macOS)
 import Cocoa
 
 extension BasicTable {
@@ -20,3 +21,4 @@ extension BasicTable {
       fatalError("⚠️️ Must be implemented by subclass")
    }
 }
+#endif

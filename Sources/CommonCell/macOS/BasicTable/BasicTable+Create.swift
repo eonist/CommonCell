@@ -1,3 +1,4 @@
+#if os(macOS)
 import Cocoa
 
 extension BasicTable {
@@ -19,3 +20,4 @@ extension BasicTable {
       return tableView
    }
 }
+#endif

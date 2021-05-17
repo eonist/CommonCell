@@ -1,3 +1,4 @@
+#if os(macOS)
 import Cocoa
 /**
  * - Fixme: ⚠️️ Move to MUI? could be useful in other apps, the onScroll part is pretty custom, maybe make BasicTable and move that?
@@ -20,3 +21,4 @@ open class BasicTable: NSScrollView, NSTableViewDataSource, NSTableViewDelegate 
       fatalError("init(coder:) has not been implemented")
    }
 }
+#endif
