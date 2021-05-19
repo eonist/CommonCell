@@ -5,7 +5,7 @@ extension ActionCell {
    /**
     * Callback hock (call this and it will call the listener)
     */
-   public func action(value: Any) {
+   public func action(value: Any? = nil) {
       self.value = value
       onAction(self, value)
    }
