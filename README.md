@@ -8,4 +8,4 @@ Commonly used table cells
 - Add screenshot to readme
 
 ### Examples:
-See [https://github.com/eonist/SimpleTable](https://github.com/eonist/SimpleTable)
+For iOS see: [https://github.com/eonist/SimpleTable](https://github.com/eonist/SimpleTable)

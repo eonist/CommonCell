@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       return true
    }
 }
+/**
+ * Controller
+ */
 class MainVC: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -25,6 +28,9 @@ class MainVC: UIViewController {
    }
    override var prefersStatusBarHidden: Bool { false }
 }
+/**
+ * View
+ */
 class MainView: UIView {
    override init(frame: CGRect) {
       super.init(frame: frame)
