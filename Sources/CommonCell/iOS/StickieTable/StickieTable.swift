@@ -5,7 +5,7 @@ import UIKit
  */
 open class StickieTable: BaseTable {
    /**
-    * callback
+    * Callback
     */
    public var onVerticalScroll: OnVerticalScroll = defaultOnVerticalScroll
    /**
