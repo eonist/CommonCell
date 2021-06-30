@@ -1,8 +1,5 @@
 #if os(macOS)
 import Cocoa
-import With
-import CommonCell
-import MUI
 /**
  * StickyTable
  * - Fixme: ⚠️️ move stickytable to CommonCell?
