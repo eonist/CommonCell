@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ReusableCell",
+        "repositoryURL": "https://github.com/eonist/ReusableCell.git",
+        "state": {
+          "branch": "master",
+          "revision": "b48182ecdf12a39fb4df5d7d7f5a20b903358e56",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

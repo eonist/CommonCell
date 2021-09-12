@@ -1,9 +1,9 @@
+#if os(macOS)
 import Foundation
 /**
  * In this table: all Cells must have these attributes
- * - Fixme: ⚠️️ Rename to InputCellType? InputCellKind? CompositeCellKind?
  */
-public struct GeneralCellType {
+public struct InputCellType {
    public let type: String
    public let title: String
    public let value: Any?
@@ -23,7 +23,7 @@ public struct GeneralCellType {
 /**
  * Getter
  */
-extension GeneralCellType {
+extension InputCellType {
    /**
     * cellData
     */
@@ -31,3 +31,4 @@ extension GeneralCellType {
       .init(titleText: self.title, value: self.value)
    }
 }
+#endif
