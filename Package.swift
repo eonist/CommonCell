@@ -10,11 +10,11 @@ let package = Package(
             targets: ["CommonCell"])
     ],
     dependencies: [
-        .package(url: "https://github.com/eonist/ReusableCell.git", .branch("master"))
+        /*.package(url: "https://github.com/eonist/ReusableCell.git", .branch("master"))*/
     ],
     targets: [
         .target(
             name: "CommonCell",
-            dependencies: ["ReusableCell"])
+            dependencies: [/*"ReusableCell"*/])
     ]
 )
