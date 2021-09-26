@@ -1,6 +1,6 @@
 #if os(iOS)
 import UIKit
-import ReusableCell
+//import ReusableCell
 /**
  * - Note I guess the @objc purpouse of this class is to avoid adding the required init in subClasses?
  */

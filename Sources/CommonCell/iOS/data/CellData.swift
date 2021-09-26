@@ -1,5 +1,5 @@
 #if os(iOS)
-import ReusableCell
+//import ReusableCell
 /**
  * Container for data for title and value
  * - Fixme: ⚠️️ Can be moved to different place
