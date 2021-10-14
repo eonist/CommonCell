@@ -2,6 +2,7 @@ import Foundation
 /**
  * In this table: all Cells must have these attributes
  * - Note: Used to store cell type and cell data in table models etc
+ * - Fixme: ⚠️️ rename to CellContainer? or CellBox or Cell...?
  */
 public struct CellType {
    public let type: ActionCellKind.Type?
