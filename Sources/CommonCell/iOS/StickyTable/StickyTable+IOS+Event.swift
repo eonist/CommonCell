@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 
-extension StickieTable {
+extension StickyTable {
    /**
     * Used to make the NavBar stick to the tableView
     * - Note: Calls a callback that notifies external UI elements to reposition etc

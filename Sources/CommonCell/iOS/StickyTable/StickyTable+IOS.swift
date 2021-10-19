@@ -1,10 +1,9 @@
 #if os(iOS)
 import UIKit
 /**
- * Stickie
- * fix: rename to StickyTable, name file + iOS
+ * StickyTable
  */
-open class StickieTable: BaseTable {
+open class StickyTable: BaseTable {
    /**
     * Callback
     */
