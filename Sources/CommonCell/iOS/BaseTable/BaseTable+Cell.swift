@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 /**
- * - Fixme: ⚠️️ Make this a BaseTableKind protocol instead
+ * - Fixme: ⚠️️ Make this a BaseTableKind protocol instead?
  */
 extension BaseTable {
    /**

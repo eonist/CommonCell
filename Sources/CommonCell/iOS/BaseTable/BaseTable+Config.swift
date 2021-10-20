@@ -11,15 +11,12 @@ extension BaseTable {
    }
    /**
     * Config table
-    * - Fixme: ⚠️️ rename to config
     */
    @objc open func config() {
       self.showsVerticalScrollIndicator = false
-      // Delegate
-      self.dataSource = self
-      self.delegate = self
-      // UI
-      self.separatorStyle = .none
+      self.dataSource = self // Delegate
+      self.delegate = self // Delegate
+      self.separatorStyle = .none // UI
 //      self.contentInset = .init(top: HeaderView.height, left: 0, bottom: 0, right: 0) // Offsets the content, so that sticky header works etc
       self.backgroundColor = .clear // Swatch.Background.primary
    }
