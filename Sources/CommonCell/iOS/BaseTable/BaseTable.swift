@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 /**
- * - Fixme: ⚠️️ maybe make ScrollTable? see DesktopUI
+ * - Fixme: ⚠️️ Maybe make ScrollTable? see DesktopUI
  */
 open class BaseTable: UITableView, UITableViewDelegate, UITableViewDataSource {
    /**

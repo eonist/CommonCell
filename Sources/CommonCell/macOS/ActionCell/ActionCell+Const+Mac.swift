@@ -2,7 +2,6 @@
 import QuartzCore
 /**
  * Const
- * - Fixme: ⚠️️ the height could be moved to more speccific CellType
  */
 extension ActionCell {
    public typealias OnAction = (_ actionCell: ActionCell, _ value: Any?) -> Void

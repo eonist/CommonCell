@@ -2,7 +2,6 @@
 import Cocoa
 /**
  * StickyTable
- * - Fixme: ⚠️️ move stickytable to CommonCell?
  */
 open class StickyTable: BasicTable {
    public var onVerticalScroll: OnVerticalScroll = defaultOnVerticalScroll
