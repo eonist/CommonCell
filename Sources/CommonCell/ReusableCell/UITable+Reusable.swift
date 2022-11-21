@@ -38,7 +38,7 @@ extension UITableView {
 extension UITableView {
    /**
     * - Fixme: ⚠️️ Should this maybe return optional?
-    * - Fixme: ⚠️️ rename to dequeue
+    * - Fixme: ⚠️️ rename to dequeue, probably
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell(indexPath: indexPath)
     */
