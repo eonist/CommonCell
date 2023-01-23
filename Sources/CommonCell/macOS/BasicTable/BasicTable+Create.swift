@@ -3,7 +3,7 @@ import Cocoa
 
 extension BasicTable {
    /**
-    * Table (config and add table to NSScrollView)
+    * Table (config and add table to `NSScrollView`)
     */
    @objc open func createTable() -> NSTableView {
       let tv: NSTableView = .init(frame: .zero)

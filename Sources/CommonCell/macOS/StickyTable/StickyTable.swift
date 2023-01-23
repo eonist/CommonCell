@@ -7,7 +7,7 @@ open class StickyTable: BasicTable {
    public var onVerticalScroll: OnVerticalScroll = defaultOnVerticalScroll
    /**
     * - Note: This table is only cell based, it doesn't use sections. because we want to use the same structure for macOS, and macOS doesnt have sections
-    * - Parameter frame: needed, sometimes we use frame and not autolayout
+    * - Parameter frame: Needed, sometimes we use frame and not autolayout
     */
    override public init(frame: CGRect = .zero) {
       super.init(frame: frame)

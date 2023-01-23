@@ -3,7 +3,7 @@ import UIKit
 
 extension ReusableCellKind where Self: UIView {
    /**
-    * The default identifier for a cell
+    * The default reuse-identifier for a cell
     */
    public static var defaultReuseIdentifier: String {
       String(describing: self)
@@ -11,9 +11,13 @@ extension ReusableCellKind where Self: UIView {
 }
 /**
  * Bulk functionality (convenience)
- * [A.self, B.self].register(self)
  */
 extension Array where Element == ReusableCellKind.Type {
+   /**
+    * # Examples:
+    * [A.self, B.self].register(self)
+    * - Parameter table: - Fixme: ⚠️️ doc
+    */
    public func register(_ table: UITableView) {
       table.register(self)
    }

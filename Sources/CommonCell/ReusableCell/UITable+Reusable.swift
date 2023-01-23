@@ -1,32 +1,38 @@
 #if os(iOS)
 import UIKit
-
+/**
+ * - Fixme: ⚠️️ maybe use a protocol and merge similar collectionview + table code
+ */
 extension UITableView {
    /**
     * Register Cell
+    * - Fixme: ⚠️️ Add support for registering multiple cells: register([HCell.self,VCell.self]) etc, see TestRunner for similar code for how to do this
     * ## Examples:
     * tableView.register(CustomCell.self)
-    * - Fixme: ⚠️️ Add support for registering multiple cells: register([HCell.self,VCell.self]) etc, see TestRunner for similar code for how to do this
     */
    public func register<T: UITableViewCell>(_: T.Type) where T: ReusableCellKind {
       register(T.self, forCellReuseIdentifier: T.defaultReuseIdentifier)
    }
    /**
     * Adds support for registering multiple cells: register([HCell.self, VCell.self]) etc
+    * - Parameter types: - Fixme: ⚠️️ add doc
     */
    public func register(_ types: [ReusableCellKind.Type]) {
       types.forEach { register($0.self, forCellReuseIdentifier: $0.defaultReuseIdentifier) }
    }
    /**
+    * - Fixme: ⚠️️ Rename to dequeue
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell()
-    * - Fixme: ⚠️️ rename to dequeue
+    * - Returns: - Fixme: ⚠️️ doc
     */
    public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
    /**
-    * - Fixme: ⚠️️ rename to dequeue
+    * - Fixme: ⚠️️ Rename to `dequeue`
+    * - Fixme: ⚠️️ return optional
+    * - Returns: - Fixme: ⚠️️ add doc
     */
    public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
@@ -37,16 +43,18 @@ extension UITableView {
  */
 extension UITableView {
    /**
-    * - Fixme: ⚠️️ Should this maybe return optional?
-    * - Fixme: ⚠️️ rename to dequeue, probably
+    * - Fixme: ⚠️️ Should this maybe return optional? yepp
+    * - Fixme: ⚠️️ rename to `dequeue`, probably
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell(indexPath: indexPath)
+    * - Parameter indexPath: - Fixme: ⚠️️ add doc
+    * - Returns: - Fixme: ⚠️️ add doc
     */
    public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
    }
    /**
-    * - Fixme: ⚠️️ rename to dequeue
+    * - Fixme: ⚠️️ rename to `dequeue`
     */
    public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
@@ -60,7 +68,8 @@ extension UITableView {
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell()
     * - Fixme: ⚠️️ Should this maybe return optional?
-    * - Fixme: ⚠️️ rename to dequeue
+    * - Fixme: ⚠️️ rename to `dequeue`
+    * - Returns: - Fixme: ⚠️️ add doc
     */
    public func dequeueReusableCell<T: UITableViewCell>(_: T.Type) -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T

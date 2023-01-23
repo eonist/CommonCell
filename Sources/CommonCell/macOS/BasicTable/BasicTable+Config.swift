@@ -18,7 +18,7 @@ extension BasicTable {
       self.verticalScrollElasticity = .allowed // Makes table bounce
       _ = table // activate table
       // - Fixme: ⚠️️ maybe not set that header height, 👉 do it in super class? 👈
-//      self.setContentOffset(.init(x: 0, y: 0)) // add content offset, to make room for header
+      // self.setContentOffset(.init(x: 0, y: 0)) // add content offset, to make room for header
    }
 }
 #endif

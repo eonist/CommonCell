@@ -5,7 +5,7 @@ import UIKit
  */
 extension TextCell {
    /**
-    * Create Title Label
+    * Create Title `Label`
     */
    @objc open func createDescriptionLabel() -> UILabel {
       let label = UILabel()
@@ -23,7 +23,7 @@ extension TextCell {
       label.setContentHuggingPriority(.init(500), for: .horizontal) // Makes sure the label retians it's instrinsic width, as oppose to sticking to the textField left anchor
    }
    /**
-    * Create Content TextField
+    * Create Content `TextField`
     */
    @objc open func createContentTextField() -> UITextField {
       let tf = UITextField()

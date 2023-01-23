@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 /**
- * - Fixme: ⚠️️ Should be moved to ReuasableCellKind etc?
+ * - Fixme: ⚠️️ Should be moved to `ReuasableCellKind etc?
  */
 public protocol ActionCellKind: BaseCellKind {
    static var height: CGFloat { get } // Height of cell

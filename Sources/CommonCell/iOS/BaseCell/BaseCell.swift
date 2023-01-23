@@ -4,7 +4,7 @@ import UIKit
  * - Note I guess the @objc purpouse of this class is to avoid adding the required init in subClasses?
  */
 open class BaseCell: UITableViewCell, ReusableCellKind {
-   open var data: CellDataKind? // Stores cellData
+   open var data: CellDataKind? // Stores CellData
    /**
     * Init
     */

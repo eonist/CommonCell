@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 /**
- * ReusableCollectionCell
+ * - Fixme: ⚠️️ add doc
  */
 open class ReusableCollectionCell: UICollectionViewCell, ReusableCellKind {}
 #endif

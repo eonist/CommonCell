@@ -3,7 +3,7 @@ import Foundation
 
 extension ActionCell {
    /**
-    * callback hock (call this and it will call the listener)
+    * Callback hock (call this and it will call the listener)
     */
    public func action(value: Any?) {
       self.value = value
