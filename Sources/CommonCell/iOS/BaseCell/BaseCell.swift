@@ -4,7 +4,10 @@ import UIKit
  * - Note I guess the @objc purpouse of this class is to avoid adding the required init in subClasses?
  */
 open class BaseCell: UITableViewCell, ReusableCellKind {
-   open var data: CellDataKind? // Stores CellData
+   /**
+    * Stores CellData
+    */
+   open var data: CellDataKind?
    /**
     * Init
     */
@@ -15,7 +18,7 @@ open class BaseCell: UITableViewCell, ReusableCellKind {
    /**
     * Boilerplate
     */
-   @available(*, unavailable)
+   @available(*, unavailable) // Avoids subsequent warnings to implement this
    public required init?(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
    }
@@ -24,6 +27,9 @@ open class BaseCell: UITableViewCell, ReusableCellKind {
  * Const
  */
 extension BaseCell {
+   /**
+    * - Fixme: ⚠️️ add doc
+    */
    @objc open class var defaultReuseIdentifier: String { String(describing: self) }
 }
 #endif

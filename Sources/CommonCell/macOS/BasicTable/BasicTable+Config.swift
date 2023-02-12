@@ -6,7 +6,7 @@ import Cocoa
 extension BasicTable {
    /**
     * Config table
-    * - Note: ⚠️️ The content offset might also be solved like this: https://stackoverflow.com/questions/10016475/create-nsscrollview-programmatically-in-an-nsview-cocoa
+    * - Remark: The content offset might also be solved like this: https://stackoverflow.com/questions/10016475/create-nsscrollview-programmatically-in-an-nsview-cocoa
     */
    @objc open func config() {
       self.automaticallyAdjustsContentInsets = false // remove auto adjustments to contentInset
@@ -17,7 +17,7 @@ extension BasicTable {
       self.backgroundColor = .clear // No background color // Swatch.Background.primary, self.backgroundColor = Color.Background.primary
       self.verticalScrollElasticity = .allowed // Makes table bounce
       _ = table // activate table
-      // - Fixme: ⚠️️ maybe not set that header height, 👉 do it in super class? 👈
+      // - Fixme: ⚠️️ Maybe not set that header height, 👉 do it in super class? 👈
       // self.setContentOffset(.init(x: 0, y: 0)) // add content offset, to make room for header
    }
 }

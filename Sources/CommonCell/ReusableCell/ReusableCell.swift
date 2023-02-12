@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 /**
- * - Fixme: ⚠️️ Add example code
+ * - Fixme: ⚠️️ Add doc
  */
 open class ReusableCell: UITableViewCell, ReusableCellKind {}
 #endif

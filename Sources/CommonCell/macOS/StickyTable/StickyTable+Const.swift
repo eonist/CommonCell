@@ -2,7 +2,10 @@
 import Foundation
 
 extension StickyTable {
-   public typealias OnVerticalScroll = (CGFloat) -> Void // Callback signature
+   /**
+    * Callback signature
+    */
+   public typealias OnVerticalScroll = (CGFloat) -> Void
    public static let defaultOnVerticalScroll: OnVerticalScroll = { _ in }
 }
 #endif

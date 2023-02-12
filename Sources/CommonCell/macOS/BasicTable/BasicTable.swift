@@ -4,8 +4,8 @@ import Cocoa
 open class BasicTable: NSScrollView, NSTableViewDataSource, NSTableViewDelegate {
    public lazy var table: NSTableView = createTable() // - Fixme: ⚠️️ Rename to TableView
    /**
-    * - Note: This table is only cell based, it doesn't use sections. Because we want to use the same structure for macOS, and macOS doesnt have sections
-    * - Parameter frame: - Fixme: ⚠️️ doc
+    * - Remark: This table is only cell based, it doesn't use sections. Because we want to use the same structure for macOS, and macOS doesnt have sections
+    * - Parameter frame: Internal CGRect for NSView etc
     */
    override public init(frame: CGRect = .zero) {
       super.init(frame: frame)

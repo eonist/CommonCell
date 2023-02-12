@@ -5,7 +5,7 @@ import Cocoa
  */
 public protocol ActionCellKind: BaseCellKind {
    /**
-    * height of cell
+    * Height of cell
     */
    static var height: CGFloat { get }
 }

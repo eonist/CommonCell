@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 /**
- * - Fixme: ⚠️️ maybe use a protocol and merge similar collectionview + table code
+ * - Fixme: ⚠️️ Maybe use a protocol and merge similar collectionview + table code
  */
 extension UITableView {
    /**
@@ -21,20 +21,18 @@ extension UITableView {
       types.forEach { register($0.self, forCellReuseIdentifier: $0.defaultReuseIdentifier) }
    }
    /**
-    * - Fixme: ⚠️️ Rename to dequeue
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell()
     * - Returns: - Fixme: ⚠️️ doc
     */
-   public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind, T: NibLoadableView {
+   public func dequeue<T: UITableViewCell>() -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
    /**
-    * - Fixme: ⚠️️ Rename to `dequeue`
     * - Fixme: ⚠️️ return optional
     * - Returns: - Fixme: ⚠️️ add doc
     */
-   public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind {
+   public func dequeue<T: UITableViewCell>() -> T where T: ReusableCellKind {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
 }
@@ -44,19 +42,18 @@ extension UITableView {
 extension UITableView {
    /**
     * - Fixme: ⚠️️ Should this maybe return optional? yepp
-    * - Fixme: ⚠️️ rename to `dequeue`, probably
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell(indexPath: indexPath)
     * - Parameter indexPath: - Fixme: ⚠️️ add doc
     * - Returns: - Fixme: ⚠️️ add doc
     */
-   public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
+   public func dequeue<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
    }
    /**
     * - Fixme: ⚠️️ rename to `dequeue`
     */
-   public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind, T: NibLoadableView {
+   public func dequeue<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
    }
 }
@@ -68,10 +65,9 @@ extension UITableView {
     * ## Examples:
     * let cell: CustomCell = collectionView.dequeueReusableCell()
     * - Fixme: ⚠️️ Should this maybe return optional?
-    * - Fixme: ⚠️️ rename to `dequeue`
     * - Returns: - Fixme: ⚠️️ add doc
     */
-   public func dequeueReusableCell<T: UITableViewCell>(_: T.Type) -> T where T: ReusableCellKind, T: NibLoadableView {
+   public func dequeue<T: UITableViewCell>(_ type: T.Type) -> T where T: ReusableCellKind, T: NibLoadableView {
       dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
    /**
@@ -81,6 +77,29 @@ extension UITableView {
       let bundle = Bundle(for: T.self)
       let nib = UINib(nibName: T.nibName, bundle: bundle)
       register(nib, forCellReuseIdentifier: T.defaultReuseIdentifier)
+   }
+}
+// Deprecated ⚠️️
+extension UITableView {
+   @available(*, deprecated, renamed: "dequeue")
+   public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind, T: NibLoadableView {
+      dequeue()
+   }
+   @available(*, deprecated, renamed: "dequeue")
+   public func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableCellKind {
+      dequeue()
+   }
+   @available(*, deprecated, renamed: "dequeue")
+   public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
+      dequeue(indexPath: indexPath)
+   }
+   @available(*, deprecated, renamed: "dequeue")
+   public func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind, T: NibLoadableView {
+      dequeue(indexPath: indexPath)
+   }
+   @available(*, deprecated, renamed: "dequeue")
+   public func dequeueReusableCell<T: UITableViewCell>(_ type: T.Type) -> T where T: ReusableCellKind, T: NibLoadableView {
+      dequeue(type)
    }
 }
 #endif

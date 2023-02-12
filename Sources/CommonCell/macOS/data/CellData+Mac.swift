@@ -8,8 +8,8 @@ public struct CellData: CellDataKind {
    public let value: Any?
    /**
     * - Parameters:
-    *   - titleText: - Fixme: ⚠️️ Add doc
-    *   - value: - Fixme: ⚠️️ Add doc
+    *   - titleText: Default cell title
+    *   - value: Custom value
     */
    public init(titleText: String, value: Any?) {
       self.titleText = titleText

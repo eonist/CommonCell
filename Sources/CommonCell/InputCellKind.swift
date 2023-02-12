@@ -1,7 +1,13 @@
 import Foundation
 
 public protocol InputCellKind {
+   /**
+    * - Fixme: ⚠️️ add doc
+    */
    var inputText: String? { get }
+   /**
+    * - Fixme: ⚠️️ add doc
+    */
    var titleText: String? { get }
 }
 /**

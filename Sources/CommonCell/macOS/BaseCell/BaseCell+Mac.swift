@@ -40,7 +40,7 @@ extension BaseCell {
 extension BaseCell {
    /**
     * When apperance change, this is redrawn
-    * - Parameter dirtyRect: - Fixme: ⚠️️ add doc
+    * - Parameter dirtyRect: Not important, just internal cgrect stuff for internal drawing etc, legacy api
     */
    override open func draw(_ dirtyRect: NSRect) {
       super.draw(dirtyRect)
