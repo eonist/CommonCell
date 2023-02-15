@@ -31,3 +31,5 @@ extension CellType {
       .init(titleText: self.title, value: self.data)
    }
 }
+// Convenient
+public typealias CellTypes = [CellType]
