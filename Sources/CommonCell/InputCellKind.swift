@@ -2,11 +2,11 @@ import Foundation
 
 public protocol InputCellKind {
    /**
-    * - Fixme: ⚠️️ add doc
+    * Value text
     */
    var inputText: String? { get }
    /**
-    * - Fixme: ⚠️️ add doc
+    * Title text
     */
    var titleText: String? { get }
 }
@@ -20,7 +20,7 @@ public typealias InputCellKinds = [InputCellKind]
 extension InputCellKinds {
    /**
     * Find the first for title
-    * - Parameter title: - Fixme: ⚠️️ add doc
+    * - Parameter title: look for this title among cells
     */
    public func first(title: String) -> InputCellKind? {
       self.first { $0.titleText == title }

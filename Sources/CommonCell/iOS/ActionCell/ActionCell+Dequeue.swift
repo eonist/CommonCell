@@ -13,7 +13,7 @@ extension ActionCell {
     * - Returns: - Fixme: ⚠️️ add doc
     */
    public static func dequeue(table: UITableView, indexPath: IndexPath) -> Self {
-      table.dequeueReusableCell(indexPath: indexPath) as Self
+      table.dequeue(indexPath: indexPath) as Self
    }
 }
 #endif
