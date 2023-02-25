@@ -1,7 +1,7 @@
 #if os(macOS)
 import Cocoa
 /**
- * - Note: No dequeue in macOS
+ * No dequeue in macOS, - Fixme: ⚠️️ or is there?
  */
 public protocol ActionCellKind: BaseCellKind {
    /**

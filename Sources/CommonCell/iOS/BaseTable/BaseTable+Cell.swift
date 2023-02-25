@@ -14,7 +14,7 @@ extension BaseTable {
       fatalError("⚠️️ must be implemented by subclass")
    }
    /**
-    * - Note: We dequeue based on cell class types stored in the sections array
+    * We dequeue based on cell class types stored in the sections array
     * - Parameters:
     *   - tableView: - Fixme: ⚠️️ add doc
     *   - indexPath: - Fixme: ⚠️️ add doc

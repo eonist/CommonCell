@@ -5,11 +5,11 @@ import Foundation
  */
 open class ActionCell: BaseCell, ActionCellKind {
    /**
-    * - Note: override this to pull out the value?
+    * Override this to pull out the value?
     */
    open var value: Any?
    /**
-    * - Note: set this to get callback
+    * Set this to get callback
     */
    public var onAction: OnAction = defaultOnAction
 }

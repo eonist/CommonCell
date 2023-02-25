@@ -9,7 +9,7 @@ open class StickyTable: BaseTable {
     */
    public var onVerticalScroll: OnVerticalScroll = defaultOnVerticalScroll
    /**
-    * - Note: This table is only cell based, it doesn't use sections. Because we want to use the same structure for macOS, and macOS doesn't have sections
+    * This table is only cell based, it doesn't use sections. Because we want to use the same structure for macOS, and macOS doesn't have sections
     * - Parameters:
     *   - frame: - Fixme: ⚠️️ add doc
     *   - style: - Fixme: ⚠️️ add doc

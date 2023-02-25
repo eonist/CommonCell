@@ -5,7 +5,7 @@ import UIKit
  */
 open class BaseTable: UITableView, UITableViewDelegate, UITableViewDataSource {
    /**
-    * - Note: This table is only cell based, it doesn't use sections. Because we want to use the same structure for macOS, and macOS doesnt have sections
+    * This table is only cell based, it doesn't use sections. Because we want to use the same structure for macOS, and macOS doesnt have sections
     * - Parameters:
     *   - frame: - Fixme: ⚠️️ add doc
     *   - style: - Fixme: ⚠️️ add doc

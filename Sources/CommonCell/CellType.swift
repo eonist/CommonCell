@@ -1,7 +1,7 @@
 import Foundation
 /**
  * In this table: all Cells must have these attributes
- * - Note: Used to store cell type and cell data in table models etc
+ * - Remark: Used to store cell type and cell data in table models etc
  * - Fixme: ⚠️️ Rename to `CellContainer`? or `CellBox` or Cell...?, `InputCellType`?
  */
 public struct CellType {
