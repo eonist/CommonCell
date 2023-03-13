@@ -1,5 +1,7 @@
 import Foundation
-
+/**
+ * - Fixme: ⚠️️ Remove inputcellkind for cells that are not input etc
+ */
 public protocol InputCellKind {
    /**
     * Value text
