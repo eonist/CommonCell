@@ -1,4 +1,7 @@
+[![Tests](https://github.com/eonist/CommonCell/actions/workflows/Tests.yml/badge.svg)](https://github.com/eonist/CommonCell/actions/workflows/Tests.yml)
+
 # CommonCell
+
 > Commonly used table cells
 
 ### Installation:
