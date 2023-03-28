@@ -1,9 +1,9 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.6
 import PackageDescription
 
 let package = Package(
     name: "CommonCell",
-    platforms: [.iOS(.v12), .macOS(.v10_13)],
+    platforms: [.iOS(.v15), .macOS(.v12)],
     products: [
         .library(
             name: "CommonCell",
