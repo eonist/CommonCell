@@ -11,14 +11,16 @@ extension BasicTable {
     * - Returns: - Fixme: ⚠️️ add doc
     */
    @objc open func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-      fatalError("⚠️️ Must be implemented by subclass")
+      Swift.print("⚠️️ Must be implemented by subclass")
+      return nil
    }
    /**
     * Returns row count in a section
     * - Parameter tableView: - Fixme: ⚠️️ add doc
     */
    @objc open func numberOfRows(in tableView: NSTableView) -> Int {
-      fatalError("⚠️️ Must be implemented by subclass")
+      Swift.print("⚠️️ Must be implemented by subclass")
+      return .zero
    }
    /**
     * Returns row-height (the height of each cell)
@@ -27,7 +29,8 @@ extension BasicTable {
     *   - row: - Fixme: ⚠️️ add doc
     */
    @objc open func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-      fatalError("⚠️️ Must be implemented by subclass")
+      Swift.print("⚠️️ Must be implemented by subclass")
+      return .zero
    }
 }
 #endif
