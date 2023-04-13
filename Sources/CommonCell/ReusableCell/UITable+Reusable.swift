@@ -22,7 +22,8 @@ extension UITableView {
    }
    /**
     * ## Examples:
-    * let cell: CustomCell = collectionView.dequeueReusableCell()
+    * let cell: CustomCell = collectionView.dequeue()
+    * - Fixme: ⚠️️ add _ type: T? = nil in the param
     * - Returns: - Fixme: ⚠️️ doc
     */
    public func dequeue<T: UITableViewCell>() -> T where T: ReusableCellKind, T: NibLoadableView {
