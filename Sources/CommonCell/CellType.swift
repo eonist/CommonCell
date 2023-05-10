@@ -33,3 +33,14 @@ extension CellType {
 }
 // Convenient
 public typealias CellTypes = [CellType]
+
+extension CellType: Equatable {
+   /**
+    * - Fixme: ⚠️️ should equate value as well, fix later
+    */
+   public static func == (lhs: CellType, rhs: CellType) -> Bool {
+      lhs.type == rhs.type &&
+      lhs.title == rhs.title //&&
+//      Equatable.equate(lhs.data, rhs.data)
+   }
+}
