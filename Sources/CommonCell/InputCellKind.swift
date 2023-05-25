@@ -1,6 +1,7 @@
 import Foundation
 /**
  * - Fixme: ⚠️️ Remove inputcellkind for cells that are not input etc
+ * - Fixme: ⚠️️ we should also add idText. for when we support localization etc
  */
 public protocol InputCellKind {
    /**
