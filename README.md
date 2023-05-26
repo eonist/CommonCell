@@ -13,4 +13,5 @@ For iOS see: [https://github.com/eonist/SimpleTable](https://github.com/eonist/S
 
 ### Todo:
 - Add screenshot to readme
+- Add gif to readme
 - Add unit test and gh actions
