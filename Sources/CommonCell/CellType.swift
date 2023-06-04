@@ -3,6 +3,7 @@ import Foundation
  * In this table: all Cells must have these attributes
  * - Remark: Used to store cell type and cell data in table models etc
  * - Fixme: ⚠️️ Rename to `CellContainer`? or `CellBox` or Cell...?, `InputCellType`?
+ * - Fixme: ⚠️️ Maybe rename to CellItem or CellClass? or keep as is or CellClassData?
  */
 public struct CellType {
    public let type: ActionCellKind.Type?
@@ -10,9 +11,9 @@ public struct CellType {
    public let data: Any?
    /**
     * - Parameters:
-    *   - type: The cell type (We use celltype to reuse cell etc)
-    *   - title: Title
-    *   - data: Value
+    *   - type: The cell class type (We use celltype to reuse cell etc)
+    *   - title: Title in the cell
+    *   - data: Value in the cell
     */
    public init(type: ActionCellKind.Type?, title: String, data: Any? = nil) {
       self.type = type
@@ -31,7 +32,9 @@ extension CellType {
       .init(titleText: self.title, value: self.data)
    }
 }
-// Convenient
+/**
+ * Convenient
+ */
 public typealias CellTypes = [CellType]
 
 extension CellType: Equatable {
@@ -40,7 +43,7 @@ extension CellType: Equatable {
     */
    public static func == (lhs: CellType, rhs: CellType) -> Bool {
       lhs.type == rhs.type &&
-      lhs.title == rhs.title //&&
-//      Equatable.equate(lhs.data, rhs.data)
+      lhs.title == rhs.title // &&
+      // Equatable.equate(lhs.data, rhs.data)
    }
 }
