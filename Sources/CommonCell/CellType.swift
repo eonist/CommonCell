@@ -4,11 +4,12 @@ import Foundation
  * - Remark: Used to store cell type and cell data in table models etc
  * - Fixme: ⚠️️ Rename to `CellContainer`? or `CellBox` or Cell...?, `InputCellType`?
  * - Fixme: ⚠️️ Maybe rename to CellItem or CellClass? or keep as is or CellClassData?
+ * - Fixme: ⚠️️ Rename to 👉 `CellAndData` 👈 reasoning: it's more descriptive
  */
 public struct CellType {
    public let type: ActionCellKind.Type?
    public let title: String
-   public let data: Any?
+   public let data: Any? // - Fixme: ⚠️️ rename to value
    /**
     * - Parameters:
     *   - type: The cell class type (We use celltype to reuse cell etc)
@@ -26,7 +27,9 @@ public struct CellType {
  */
 extension CellType {
    /**
-    * cellData
+    * CellType -> CellData
+    * - Fixme: ⚠️️ Rename to getCellData ?
+    * - Fixme: ⚠️️ Add doc what this is used for etc
     */
    public var cellData: CellData {
       .init(titleText: self.title, value: self.data)
