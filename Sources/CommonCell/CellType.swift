@@ -9,7 +9,7 @@ import Foundation
 public struct CellType {
    public let type: ActionCellKind.Type?
    public let title: String
-   public let data: Any? // - Fixme: ⚠️️ rename to value
+   public let data: Any? // - Fixme: ⚠️️ Rename to 👉 value 👈
    /**
     * - Parameters:
     *   - type: The cell class type (We use celltype to reuse cell etc)
@@ -28,10 +28,9 @@ public struct CellType {
 extension CellType {
    /**
     * CellType -> CellData
-    * - Fixme: ⚠️️ Rename to getCellData ?
-    * - Fixme: ⚠️️ Add doc what this is used for etc
+    * - Fixme: ⚠️️ Add doc for what this is used for etc
     */
-   public var cellData: CellData {
+   public var getCellData: CellData {
       .init(titleText: self.title, value: self.data)
    }
 }
@@ -48,5 +47,12 @@ extension CellType: Equatable {
       lhs.type == rhs.type &&
       lhs.title == rhs.title // &&
       // Equatable.equate(lhs.data, rhs.data)
+   }
+}
+extension CellType {
+   // deprecated ⚠️️
+   @available(*, deprecated, renamed: "getCellData") // You can also point to new class : "UIAlertController.createAlert"
+   public var cellData: CellData {
+      getCellData
    }
 }

@@ -1,6 +1,7 @@
 #if os(iOS)
 /**
  * Container for data for title and value
+ * - Fixme: ⚠️️ Rename CellData to CellValue?
  */
 public struct CellData: CellDataKind {
    public let titleText: String
