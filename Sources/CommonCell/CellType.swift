@@ -7,7 +7,7 @@ import Foundation
  * - Fixme: ⚠️️ Rename to 👉 `CellAndData` 👈 reasoning: it's more descriptive
  */
 public struct CellType {
-   public let type: ActionCellKind.Type?
+   public let type: ActionCellKind.Type? // - Fixme: ⚠️️ rename to cellType?
    public let title: String
    public let data: Any? // - Fixme: ⚠️️ Rename to 👉 value 👈
    /**
@@ -28,6 +28,7 @@ public struct CellType {
 extension CellType {
    /**
     * CellType -> CellData
+    * - Fixme: ⚠️️ make this a method to make it more clear? get prefix for vars is not common etc
     * - Fixme: ⚠️️ Add doc for what this is used for etc
     */
    public var getCellData: CellData {
