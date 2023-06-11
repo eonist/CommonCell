@@ -50,10 +50,10 @@ extension CellType: Equatable {
       // Equatable.equate(lhs.data, rhs.data)
    }
 }
-extension CellType {
-   // deprecated ⚠️️
-   @available(*, deprecated, renamed: "getCellData") // You can also point to new class : "UIAlertController.createAlert"
-   public var cellData: CellData {
-      getCellData
-   }
-}
+//extension CellType {
+//   // deprecated ⚠️️
+//   @available(*, deprecated, renamed: "getCellData") // You can also point to new class : "UIAlertController.createAlert"
+//   public var cellData: CellData {
+//      getCellData
+//   }
+//}
