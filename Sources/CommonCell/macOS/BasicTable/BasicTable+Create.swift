@@ -3,7 +3,9 @@ import Cocoa
 
 extension BasicTable {
    /**
-    * Table (config and add table to `NSScrollView`)
+    * Creates and configures a new NSTableView instance.
+    * - Note: This method sets up the table view's layer, data source, delegate, background color, intercell spacing, selection highlight style, and header view. It also adds a column to the table view and sets the table view as the document view of the scroll view.
+    * - Returns: The newly created NSTableView instance.
     */
    @objc open func createTable() -> NSTableView {
       let tv: NSTableView = .init(frame: .zero)

@@ -1,16 +1,22 @@
 #if os(iOS)
 import UIKit
+
 /**
- * - Description: Provides a way to show a `DescriptionLabel` and and `InputTextField` in a `TableCell` [Desc Input]
- * - Remark: Left-aligned `Label` and Right-Aligned content `TextField`
+ * A table cell that displays a description label and an input text field.
+ * - Description: Provides a way to show a `DescriptionLabel` and an `InputTextField` in a `TableCell`.
+ * - Remark: The label is left-aligned and the content is right-aligned in the text field.
  */
 open class TextCell: BaseCell {
-   public lazy var descriptionLabel: UILabel = createDescriptionLabel()
-   public lazy var contentTextField: UITextField = createContentTextField()
-   /**
-    * - Description: When you set the data, the diferent UI's will be updated
-    */
-   override open var data: CellDataKind? {
+    // The label that displays the description text.
+    public lazy var descriptionLabel: UILabel = createDescriptionLabel()
+    // The text field that displays the input content.
+    public lazy var contentTextField: UITextField = createContentTextField()
+    
+    /**
+     * Sets the data for the cell and updates the UI accordingly.
+     * - Note: When you set the data, the different UI elements will be updated.
+     */
+    override open var data: CellDataKind? {
         didSet {
             guard let data: TextCellData = data as? TextCellData else { return }
             descriptionLabel.text = data.description

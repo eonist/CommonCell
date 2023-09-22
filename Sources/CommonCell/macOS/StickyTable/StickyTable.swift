@@ -1,17 +1,25 @@
 #if os(macOS)
 import Cocoa
+
 /**
- * StickyTable
+ * StickyTable is a subclass of BasicTable that supports vertical scrolling.
+ * - Note: This table is cell-based and does not use sections to maintain the same structure for macOS, which does not have sections.
  */
 open class StickyTable: BasicTable {
+   /**
+    * A closure that is called when the table is scrolled vertically.
+    * - Note: Set this property to get the callback.
+    */
    public var onVerticalScroll: OnVerticalScroll = defaultOnVerticalScroll
    /**
-    * - Remark: This table is only cell based, it doesn't use sections. because we want to use the same structure for macOS, and macOS doesnt have sections
-    * - Parameter frame: Needed, sometimes we use frame and not auto-layout
+    * Initializes a new instance of the table with the specified frame.
+    * - Parameters:
+    *   - frame: The frame rectangle for the table, specified in points. The default value is .zero.
+    * - Remark: The table uses frame layout instead of auto-layout. This is necessary in some cases.
     */
    override public init(frame: CGRect = .zero) {
       super.init(frame: frame)
-      NotificationCenter.default.addObserver(self, selector: #selector(boundsChange), name: NSView.boundsDidChangeNotification, object: self.contentView) // the boundsChange was the most consisten way to detect table motion, the scroll-wheel method didn't detect the elastic motion etc
+      NotificationCenter.default.addObserver(self, selector: #selector(boundsChange), name: NSView.boundsDidChangeNotification, object: self.contentView) // The boundsChange notification is the most consistent way to detect table motion, including elastic scrolling.
    }
 }
 #endif
