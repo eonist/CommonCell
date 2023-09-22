@@ -1,20 +1,17 @@
 import Foundation
 /**
- * - Fixme: ⚠️️ Remove inputcellkind for cells that are not input etc
- * - Fixme: ⚠️️ we should also add idText. for when we support localization etc
+ * A protocol that defines the attributes that all input cells must have.
+ * - Remark: This protocol extends the `CellKind` protocol, which defines the basic attributes that all cells must have.
+ * - Fixme: ⚠️️ This protocol should be renamed to `TextInputCellKind` to better reflect its purpose.
+ * - Fixme: ⚠️️ The `idText` attribute should be added to this protocol to support localization.
  */
 public protocol InputCellKind {
-   /**
-    * Value text
-    */
-   var inputText: String? { get }
-   /**
-    * Title text
-    */
-   var titleText: String? { get }
+   var inputText: String? { get } // The input text entered by the user in the input cell.
+   var titleText: String? { get } // The title text to be displayed in the input cell.
 }
 /**
- * Bulk
+ * A type alias for an array of input cells. (Bulk)
+ * - Remark: This type alias is used to simplify the declaration of arrays of input cells.
  */
 public typealias InputCellKinds = [InputCellKind]
 /**
@@ -22,8 +19,9 @@ public typealias InputCellKinds = [InputCellKind]
  */
 extension InputCellKinds {
    /**
-    * Find the first for title
-    * - Parameter title: look for this title among cells
+    * Find the first input cell with the specified title.
+    * - Parameter title: The title to search for among the input cells.
+    * - Returns: The first input cell with the specified title, or nil if no input cell is found.
     */
    public func first(title: String) -> InputCellKind? {
       self.first { $0.titleText == title }

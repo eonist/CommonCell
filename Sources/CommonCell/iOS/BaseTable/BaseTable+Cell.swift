@@ -1,26 +1,31 @@
 #if os(iOS)
 import UIKit
+
 /**
- * - Fixme: ⚠️️ Make this a `BaseTableKind` protocol instead?
+ * Extension that provides default implementations of the UITableViewDataSource and UITableViewDelegate methods for the BaseTable class.
+ * - Fixme: Consider making this a `BaseTableKind` protocol instead.
  */
 extension BaseTable {
    /**
-    * Returns row count in a section
+    * Returns the number of rows in the specified section.
+    * - Note: This method must be overridden by subclasses.
     */
    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      fatalError("⚠️️ must be implemented by subclass")
+      fatalError("This method must be implemented by subclass")
    }
    /**
-    * We dequeue based on cell class types stored in the sections array
+    * Returns the cell at the specified index path.
+    * - Note: This method dequeues cells based on cell class types stored in the sections array and must be overridden by subclasses.
     */
    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      fatalError("⚠️️ must be implemented by subclass")
+      fatalError("This method must be implemented by subclass")
    }
    /**
-    * Returns the height of each cell
+    * Returns the height of the cell at the specified index path.
+    * - Note: This method must be overridden by subclasses.
     */
    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-      fatalError("⚠️️ must be implemented by subclass")
+      fatalError("This method must be implemented by subclass")
    }
 }
 #endif

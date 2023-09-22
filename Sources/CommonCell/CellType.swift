@@ -1,20 +1,23 @@
 import Foundation
 /**
- * In this table: all Cells must have these attributes
- * - Remark: Used to store cell type and cell data in table models etc
- * - Fixme: ⚠️️ Rename to `CellContainer`? or `CellBox` or Cell...?, `InputCellType`?
- * - Fixme: ⚠️️ Maybe rename to CellItem or CellClass? or keep as is or CellClassData?
- * - Fixme: ⚠️️ Rename to 👉 `CellAndData` 👈 reasoning: it's more descriptive
+ * This table defines the attributes that all cells must have.
+ * - Remark: This is used to store cell type and cell data in table models, etc.
+ * - Fixme: ⚠️️ Consider renaming to `CellContainer`, `CellBox`, `InputCellType`, or `CellClass`.
+ * - Fixme: ⚠️️ Maybe rename to `CellItem` or `CellClassData`.
+ * - Fixme: ⚠️️ Consider renaming to `CellAndData` for better descriptiveness.
  */
 public struct CellType {
-   public let type: ActionCellKind.Type? // - Fixme: ⚠️️ rename to cellType?
-   public let title: String
-   public let data: Any? // - Fixme: ⚠️️ Rename to 👉 value 👈
+   // - Fixme: ⚠️️ rename to cellType? 
+   public let type: ActionCellKind.Type? // The type of the cell. Can be nil if the cell type is not specified.
+   public let title: String // The title of the cell.
+   // - Fixme: ⚠️️ Rename to 👉 value 👈
+   public let data: Any? // The data associated with the cell. Can be nil if no data is associated.
    /**
+    * Initializes a new instance of an action cell with the specified type, title, and data.
     * - Parameters:
-    *   - type: The cell class type (We use celltype to reuse cell etc)
-    *   - title: Title in the cell
-    *   - data: Value in the cell
+    *   - type: The type of the action cell.
+    *   - title: The title of the action cell.
+    *   - data: The data associated with the action cell.
     */
    public init(type: ActionCellKind.Type?, title: String, data: Any? = nil) {
       self.type = type

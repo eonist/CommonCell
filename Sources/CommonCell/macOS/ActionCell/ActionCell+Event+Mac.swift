@@ -3,11 +3,14 @@ import Foundation
 
 extension ActionCell {
    /**
-    * Callback hock (call this and it will call the listener)
-    * - Parameter value: set self.value and pass on to onAction callback
+    * Calls the onAction callback with the specified value.
+    * - Parameters:
+    *   - value: The value to pass to the onAction callback. Defaults to nil.
     */
    public func action(value: Any? = nil) {
+      // Set the value of the cell to the specified value
       self.value = value
+      // Call the onAction callback with the cell and the specified value
       onAction(self, value)
    }
 }

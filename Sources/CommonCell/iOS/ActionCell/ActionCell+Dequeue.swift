@@ -1,16 +1,17 @@
 #if os(iOS)
 import UIKit
+
 /**
- * Helper
+ * Extension that provides a helper method for dequeuing an ActionCell based on its class type.
  */
 extension ActionCell {
+   
    /**
-    * Trick to deque based on Class.Type
-    * - Fixme: ⚠️️ Move to basecell? 👈
+    * Dequeues an ActionCell from the specified table view using its class type.
     * - Parameters:
-    *   - table: - Fixme: ⚠️️ add doc
-    *   - indexPath: - Fixme: ⚠️️ add doc
-    * - Returns: - Fixme: ⚠️️ add doc
+    *   - table: The table view to dequeue the cell from.
+    *   - indexPath: The index path of the cell to dequeue.
+    * - Returns: The dequeued ActionCell instance.
     */
    public static func dequeue(table: UITableView, indexPath: IndexPath) -> Self {
       table.dequeue(indexPath: indexPath) as Self

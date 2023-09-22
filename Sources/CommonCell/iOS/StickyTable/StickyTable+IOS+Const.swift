@@ -1,15 +1,21 @@
 #if os(iOS)
 import UIKit
+
 /**
- * Const - callbacks
+ * Extension that defines constants for the StickyTable class.
  */
 extension StickyTable {
+   
    /**
-    * Callback signature
+    * A closure that is called when the table is scrolled vertically.
+    * - Parameters:
+    *   - offset: The vertical scroll offset of the table.
     */
    public typealias OnVerticalScroll = (CGFloat) -> Void
+   
    /**
-    * - Fixme: ⚠️️ add doc
+    * The default closure that is called when the table is scrolled vertically.
+    * - Note: This closure does nothing by default.
     */
    public static let defaultOnVerticalScroll: OnVerticalScroll = { _ in }
 }

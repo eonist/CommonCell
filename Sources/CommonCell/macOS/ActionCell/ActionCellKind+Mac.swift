@@ -1,11 +1,14 @@
 #if os(macOS)
 import Cocoa
+
 /**
- * No dequeue in macOS, - Fixme: ⚠️️ or is there?
+ * Protocol that defines the requirements for an action cell kind.
+ * - Note: This protocol inherits from the BaseCellKind protocol.
  */
 public protocol ActionCellKind: BaseCellKind {
+   
    /**
-    * Height of cell
+    * The standard height of the ActionCell.
     */
    static var height: CGFloat { get }
 }

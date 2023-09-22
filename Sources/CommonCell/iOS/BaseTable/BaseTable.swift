@@ -1,22 +1,26 @@
 #if os(iOS)
 import UIKit
+
 /**
- * - Fixme: ⚠️️ Maybe make `ScrollTable`? see `DesktopUI`
+ * BaseTable is a UITableView subclass that implements the UITableViewDelegate and UITableViewDataSource protocols.
+ * - Note: This class is cell-based and does not use sections to maintain the same structure for macOS, which does not have sections.
+ * - Fixme: Consider creating a `ScrollTable` as seen in `DesktopUI`.
  */
 open class BaseTable: UITableView, UITableViewDelegate, UITableViewDataSource {
    /**
-    * This table is only cell based, it doesn't use sections. Because we want to use the same structure for macOS, and macOS doesnt have sections
+    * Initializes a new instance of the table with the specified frame and style.
     * - Parameters:
-    *   - frame: - Fixme: ⚠️️ add doc
-    *   - style: - Fixme: ⚠️️ add doc
+    *   - frame: The frame rectangle for the table, specified in points. The default value is .zero.
+    *   - style: The style of the table view. The default value is .plain.
     */
    override public init(frame: CGRect = .zero, style: UITableView.Style = .plain) {
       super.init(frame: frame, style: style)
-      registerCells() // Registers Cell types
-      config() // Setup config of table
+      registerCells() // Registers the cell types for the table
+      config() // Sets up the configuration of the table
    }
    /**
-    * Boilerplate
+    * Required initializer that is not implemented.
+    * - Note: This implementation is marked as unavailable to avoid subsequent warnings to implement this.
     */
    @available(*, unavailable)
    public required init?(coder aDecoder: NSCoder) {

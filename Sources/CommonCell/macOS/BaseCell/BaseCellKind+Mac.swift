@@ -3,15 +3,15 @@ import Foundation
 
 public protocol BaseCellKind {
    /**
-    * - Fixme: ⚠️️ add doc
+    * Initializes a new instance of the cell kind.
     */
    init()
    /**
-    * - Fixme: ⚠️️ add doc
+    * The data that the cell will display.
     */
    var data: CellDataKind? { get set }
    /**
-    * - Fixme: ⚠️️ add doc
+    * Returns the default reuse identifier for the cell kind, which is the name of the kind as a string.
     */
    static var defaultReuseIdentifier: String { get }
 }
