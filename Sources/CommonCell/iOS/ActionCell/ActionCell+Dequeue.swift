@@ -1,6 +1,5 @@
 #if os(iOS)
 import UIKit
-
 /**
  * Extension that provides a helper method for dequeuing an ActionCell based on its class type.
  */
