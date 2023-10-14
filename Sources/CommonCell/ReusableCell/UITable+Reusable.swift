@@ -44,8 +44,8 @@ extension UITableView {
     * - Note: The cell type must be registered with the table view before calling this method.
     * - Example: `let cell: CustomCell? = tableView.dequeue()`
     */
-   public func dequeue<T: UITableViewCell>() -> T? where T: ReusableCellKind {
-      dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as? T
+   public func dequeue<T: UITableViewCell>() -> T where T: ReusableCellKind {
+      dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as! T
    }
 }
 /**
@@ -59,8 +59,8 @@ extension UITableView {
     * - Note: The cell type must be registered with the table view before calling this method.
     * - Example: `let cell: CustomCell? = tableView.dequeue(indexPath: indexPath)`
     */
-   public func dequeue<T: UITableViewCell>(indexPath: IndexPath) -> T? where T: ReusableCellKind {
-      dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as? T
+   public func dequeue<T: UITableViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
+      dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
    }
    /**
     * Dequeues a reusable cell of the specified type from the table view.
