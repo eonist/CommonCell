@@ -9,7 +9,7 @@ public protocol InputCellDataKind: CellDataKind {
     * - Remark: This is typically used as a label for the input field.
     */
    var titleText: String { get }
-   
+
    /**
     * The input text entered by the user in the input cell.
     * - Remark: This is typically used to retrieve the user's input from the input field.

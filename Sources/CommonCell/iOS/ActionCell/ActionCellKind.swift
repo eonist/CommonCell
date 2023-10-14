@@ -7,12 +7,11 @@ import UIKit
  * - Fixme: ⚠️️ Consider moving this to `ReusableCellKind`.
  */
 public protocol ActionCellKind: BaseCellKind {
-   
    /**
     * The standard height of the ActionCell.
     */
    static var height: CGFloat { get }
-   
+
    /**
     * Dequeues an ActionCell from the specified table view using its class type.
     * - Parameters:

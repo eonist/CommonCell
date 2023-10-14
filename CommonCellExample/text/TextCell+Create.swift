@@ -24,7 +24,7 @@ extension TextCell {
       label.setContentHuggingPriority(.init(500), for: .horizontal) // Set the content hugging priority of the label to retain its intrinsic width
       return label // Return the label instance
    }
-   
+
    /**
     * Creates the `contentTextField` of the cell.
     * - Returns: A `UITextField` instance that displays the input content of the cell.

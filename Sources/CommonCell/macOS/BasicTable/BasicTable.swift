@@ -9,7 +9,7 @@ import Cocoa
 open class BasicTable: NSScrollView, NSTableViewDataSource, NSTableViewDelegate {
    // The NSTableView instance that this scroll view contains.
    public lazy var table: NSTableView = createTable()
-   
+
    /**
     * Initializes a new instance of the table with the specified frame.
     * - Parameters:
@@ -19,7 +19,7 @@ open class BasicTable: NSScrollView, NSTableViewDataSource, NSTableViewDelegate 
       super.init(frame: frame)
       config() // Sets up the configuration of the table
    }
-   
+
    /**
     * Required initializer that is not implemented.
     * - Note: This implementation is marked as unavailable to avoid subsequent warnings to implement this.

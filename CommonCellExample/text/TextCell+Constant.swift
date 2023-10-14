@@ -10,12 +10,12 @@ extension TextCell {
     * - Note: This identifier is used when dequeuing cells from a table view.
     */
    override open class var defaultReuseIdentifier: String { "\(TextCell.self)" }
-   
+
    /**
     * The default background color for the cell.
     */
    open class var backgroundColor: UIColor { .blue }
-   
+
    /**
     * The default height for the cell.
     */

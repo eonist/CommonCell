@@ -5,7 +5,6 @@ import UIKit
  * Extension that provides a helper method for dequeuing an ActionCell based on its class type.
  */
 extension ActionCell {
-   
    /**
     * Dequeues an ActionCell from the specified table view using its class type.
     * - Parameters:

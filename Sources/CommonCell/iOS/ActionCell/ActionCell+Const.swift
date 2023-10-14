@@ -5,7 +5,6 @@ import QuartzCore
  * Extension that defines constants for the ActionCell class.
  */
 extension ActionCell {
-   
    /**
     * A closure that is called when an action is performed on the cell.
     * - Parameters:
@@ -13,13 +12,13 @@ extension ActionCell {
     *   - value: The value associated with the action.
     */
    public typealias OnAction = (_ actionCell: ActionCell, _ value: Any?) -> Void
-   
+
    /**
     * The default closure that is called when an action is performed on the cell.
     * - Note: This closure simply prints a message to the console.
     */
    public static let defaultOnAction: OnAction = { /*actionCell*/_, value in Swift.print("defaultOnAction: \(String(describing: value))") }
-   
+
    /**
     * The standard height of the ActionCell.
     */

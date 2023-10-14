@@ -6,7 +6,6 @@ import Cocoa
  * - Note: This protocol inherits from the BaseCellKind protocol.
  */
 public protocol ActionCellKind: BaseCellKind {
-   
    /**
     * The standard height of the ActionCell.
     */

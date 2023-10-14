@@ -6,13 +6,12 @@ import UIKit
  * - Note: This table is cell-based and does not use sections to maintain the same structure for macOS, which does not have sections.
  */
 open class StickyTable: BaseTable {
-   
    /**
     * A closure that is called when the table is scrolled vertically.
     * - Note: Set this property to get the callback.
     */
    public var onVerticalScroll: OnVerticalScroll = defaultOnVerticalScroll
-   
+
    /**
     * Initializes a new instance of the table with the specified frame and style.
     * - Parameters:

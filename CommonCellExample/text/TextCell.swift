@@ -11,7 +11,7 @@ open class TextCell: BaseCell {
     public lazy var descriptionLabel: UILabel = createDescriptionLabel()
     // The text field that displays the input content.
     public lazy var contentTextField: UITextField = createContentTextField()
-    
+
     /**
      * Sets the data for the cell and updates the UI accordingly.
      * - Note: When you set the data, the different UI elements will be updated.
