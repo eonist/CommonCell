@@ -22,7 +22,6 @@ extension Array where Element == ReusableCellKind.Type {
     * Registers all cell types in the array with the specified table view.
     *
     * - Parameter table: The table view to register the cell types with.
-    * - Fixme: ⚠️️ Add documentation for the `table` parameter.
     */
    public func register(_ table: UITableView) {
       table.register(self)
