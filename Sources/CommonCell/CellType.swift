@@ -31,8 +31,11 @@ public struct CellType {
 extension CellType {
    /**
     * CellType -> CellData
+    * Returns the `CellData` for the `CellType`.
+    *
+    * - Returns: The `CellData` for the `CellType`.
+    *
     * - Fixme: ⚠️️ make this a method to make it more clear? get prefix for vars is not common etc
-    * - Fixme: ⚠️️ Add doc for what this is used for etc
     */
    public var getCellData: CellData {
       .init(titleText: self.title, value: self.data)
@@ -45,7 +48,7 @@ public typealias CellTypes = [CellType]
 
 extension CellType: Equatable {
    /**
-    * - Fixme: ⚠️️ should equate value as well, fix later
+    * - Fixme: ⚠️️ Should equate value as well, fix later
     */
    public static func == (lhs: CellType, rhs: CellType) -> Bool {
       lhs.type == rhs.type &&

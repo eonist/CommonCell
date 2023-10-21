@@ -45,7 +45,6 @@ extension UICollectionView {
     * - Returns: The dequeued reusable collection view cell with the specified type and index path.
     * - Remark: This method returns the dequeued cell with the specified type and index path.
     * - Fixme: ⚠️️ This method should return an optional to handle cases where the cell cannot be dequeued.
-    * - Fixme: ⚠️️ Add documentation for the `indexPath` parameter.
     */
    public func dequeue<T: UICollectionViewCell>(indexPath: IndexPath) -> T where T: ReusableCellKind {
       dequeueReusableCell(withReuseIdentifier: T.defaultReuseIdentifier, for: indexPath) as! T
@@ -66,7 +65,6 @@ extension UICollectionView {
     * - Returns: The dequeued reusable collection view cell with the specified type and index path, or nil if the cell cannot be dequeued.
     * - Remark: This method returns the dequeued cell with the specified type and index path, or nil if the cell cannot be dequeued.
     * - Fixme: ⚠️️ This method should return an optional to handle cases where the cell cannot be dequeued.
-    * - Fixme: ⚠️️ Add documentation for the `indexPath` parameter.
     * - Remark: This method requires the cell type to conform to both the `ReusableCellKind` and `NibLoadableView` protocols.
     * - Remark: The `NibLoadableView` protocol is required to load the cell from a nib file.
     */
