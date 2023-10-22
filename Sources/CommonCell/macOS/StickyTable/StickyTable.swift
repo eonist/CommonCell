@@ -19,7 +19,12 @@ open class StickyTable: BasicTable {
     */
    override public init(frame: CGRect = .zero) {
       super.init(frame: frame)
-      NotificationCenter.default.addObserver(self, selector: #selector(boundsChange), name: NSView.boundsDidChangeNotification, object: self.contentView) // The boundsChange notification is the most consistent way to detect table motion, including elastic scrolling.
+      NotificationCenter.default.addObserver(
+         self, // The object registering as an observer
+         selector: #selector(boundsChange), // The method to call when the notification is received
+         name: NSView.boundsDidChangeNotification, // The name of the notification to register for
+         object: self.contentView // The object whose notifications the observer wants to receive; nil to receive notifications from all objects
+      ) // The boundsChange notification is the most consistent way to detect table motion, including elastic scrolling.
    }
 }
 #endif

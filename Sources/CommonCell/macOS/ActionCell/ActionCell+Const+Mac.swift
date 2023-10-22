@@ -16,7 +16,9 @@ extension ActionCell {
     * The default closure that is called when an action is performed on the cell.
     * - Note: This closure simply prints a message to the console.
     */
-   public static let defaultOnAction: OnAction = { actionCell, value in Swift.print("defaultOnAction: \(String(describing: value)) actionCell: \(actionCell)") }
+   public static let defaultOnAction: OnAction = { (actionCell: ActionCell, value: Any) in 
+      Swift.print("defaultOnAction: \(String(describing: value)) actionCell: \(actionCell)")
+   }
    /**
     * The standard height of the ActionCell.
     */
