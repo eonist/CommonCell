@@ -35,7 +35,9 @@ open class BaseCell: NSTableCellView, BaseCellKind {
  */
 extension BaseCell {
    // Returns the default reuse identifier for the cell class, which is the name of the class as a string.
-   @objc open class var defaultReuseIdentifier: String { String(describing: self) }
+   @objc open class var defaultReuseIdentifier: String { 
+      String(describing: self) 
+   }
 }
 /**
  * Override

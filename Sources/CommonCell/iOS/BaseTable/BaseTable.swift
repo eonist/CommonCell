@@ -1,6 +1,5 @@
 #if os(iOS)
 import UIKit
-
 /**
  * BaseTable is a UITableView subclass that implements the UITableViewDelegate and UITableViewDataSource protocols.
  * - Note: This class is cell-based and does not use sections to maintain the same structure for macOS, which does not have sections.

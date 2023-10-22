@@ -13,6 +13,6 @@ extension StickyTable {
     * The default closure that is called when the table is scrolled vertically.
     * - Note: This closure does nothing by default.
     */
-   public static let defaultOnVerticalScroll: OnVerticalScroll = { _ in }
+   public static let defaultOnVerticalScroll: OnVerticalScroll = { (_: CGFloat) in }
 }
 #endif

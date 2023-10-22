@@ -1,6 +1,5 @@
 #if os(iOS)
 import UIKit
-
 /**
  * Extension that provides default implementations of the UITableViewDataSource and UITableViewDelegate methods for the BaseTable class.
  * - Fixme: Consider making this a `BaseTableKind` protocol instead.

@@ -9,7 +9,6 @@ open class ActionCell: BaseCell, ActionCellKind {
     * - Note: Override this property to pull out the value.
     */
    open var value: Any?
-
    /**
     * The closure that is called when an action is performed on the cell.
     * - Note: Set this property to get the callback.

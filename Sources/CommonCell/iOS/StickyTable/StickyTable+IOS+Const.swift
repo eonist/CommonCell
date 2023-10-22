@@ -1,6 +1,5 @@
 #if os(iOS)
 import UIKit
-
 /**
  * Extension that defines constants for the StickyTable class.
  */
@@ -11,7 +10,6 @@ extension StickyTable {
     *   - offset: The vertical scroll offset of the table.
     */
    public typealias OnVerticalScroll = (CGFloat) -> Void
-
    /**
     * The default closure that is called when the table is scrolled vertically.
     * - Note: This closure does nothing by default.

@@ -1,15 +1,15 @@
 #if os(macOS)
 import Cocoa
-
 /**
  * BasicTable is a subclass of NSScrollView that implements the NSTableViewDataSource and NSTableViewDelegate protocols.
  * - Note: This table is cell-based and does not use sections to maintain the same structure for macOS, which does not have sections.
  * - Fixme: Consider renaming 'table' to 'TableView' for clarity.
  */
 open class BasicTable: NSScrollView, NSTableViewDataSource, NSTableViewDelegate {
-   // The NSTableView instance that this scroll view contains.
+   /**
+    * The NSTableView instance that this scroll view contains.
+    */
    public lazy var table: NSTableView = createTable()
-
    /**
     * Initializes a new instance of the table with the specified frame.
     * - Parameters:

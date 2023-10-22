@@ -1,6 +1,5 @@
 #if os(iOS)
 import UIKit
-
 /**
  * StickyTable is a subclass of BaseTable that supports vertical scrolling.
  * - Note: This table is cell-based and does not use sections to maintain the same structure for macOS, which does not have sections.

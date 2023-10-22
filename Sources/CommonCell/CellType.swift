@@ -10,7 +10,7 @@ public struct CellType {
    // - Fixme: ⚠️️ rename to cellType? 
    public let type: ActionCellKind.Type? // The type of the cell. Can be nil if the cell type is not specified.
    public let title: String // The title of the cell.
-   // - Fixme: ⚠️️ Rename to 👉 value 👈
+   // - Fixme: ⚠️️ Rename to 👉 value 👈 or too much hassle? maybe deprecate etc?
    public let data: Any? // The data associated with the cell. Can be nil if no data is associated.
    /**
     * Initializes a new instance of an action cell with the specified type, title, and data.
@@ -31,10 +31,7 @@ public struct CellType {
 extension CellType {
    /**
     * CellType -> CellData
-    * Returns the `CellData` for the `CellType`.
-    *
     * - Returns: The `CellData` for the `CellType`.
-    *
     * - Fixme: ⚠️️ make this a method to make it more clear? get prefix for vars is not common etc
     */
    public var getCellData: CellData {
