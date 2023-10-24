@@ -7,6 +7,7 @@ import Foundation
  */
 public protocol InputCellKind {
    var inputText: String? { get } // The input text entered by the user in the input cell.
+   // - Fixme: ⚠️️ rename this to id or something?
    var titleText: String? { get } // The title text to be displayed in the input cell.
 }
 /**
