@@ -21,7 +21,8 @@ extension TextCell {
       let left = label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Margin.horizontal) // Create a constraint for the leading edge of the label
       let y = label.centerYAnchor.constraint(equalTo: self.centerYAnchor) // Create a constraint for the vertical center of the label
       NSLayoutConstraint.activate([left, y]) // Activate the constraints
-      label.setContentHuggingPriority(.init(500), for: .horizontal) // Set the content hugging priority of the label to retain its intrinsic width
+      // Set the content hugging priority of the label to retain its intrinsic width
+      label.setContentHuggingPriority(.init(500), for: .horizontal)
       return label // Return the label instance
    }
 
@@ -37,8 +38,8 @@ extension TextCell {
       tf.tintColor = #colorLiteral(red: 0, green: 1, blue: 1, alpha: 1) // Set the tint color of the text field
       tf.font = .systemFont(ofSize: 16) // Set the font of the text field
       self.addSubview(tf) // Add the text field as a subview of the cell
-      // Constraints
-      configContentTextFieldConstraints(tf) // Configure the constraints of the text field
+      // Configure the constraints of the text field
+      configContentTextFieldConstraints(tf)
       return tf // Return the text field instance
    }
 }
@@ -59,7 +60,8 @@ extension TextCell {
          left.priority = .init(rawValue: 251) // Set the priority of the leading edge constraint
          let right = $0.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Margin.horizontal) // Create a constraint for the trailing edge of the text field
          NSLayoutConstraint.activate([left, right, y]) // Activate the constraints
-         $0.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 250), for: .horizontal) // Set the content compression resistance priority of the text field to prevent it from overlapping the label
+         // Set the content compression resistance priority of the text field to prevent it from overlapping the label
+         $0.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 250), for: .horizontal)
       }
    }
 }

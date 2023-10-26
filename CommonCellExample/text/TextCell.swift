@@ -1,6 +1,5 @@
 #if os(iOS)
 import UIKit
-
 /**
  * A table cell that displays a description label and an input text field.
  * - Description: Provides a way to show a `DescriptionLabel` and an `InputTextField` in a `TableCell`.

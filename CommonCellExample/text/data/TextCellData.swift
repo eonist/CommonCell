@@ -2,6 +2,8 @@
 import Foundation
 /**
  * A struct that contains data for a `TextCell`.
+ * ## Examples;
+ * let data: TextCellData = .init(description: "Name: ", content: "John")
  * - Description: Provides a way to store the description and content of a `TextCell`.
  */
 public struct TextCellData: CellDataKind {

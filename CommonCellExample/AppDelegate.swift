@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       win.makeKeyAndVisible() // Important since we have no Main storyboard anymore
       return win
    }()
-
    /**
     * Called when the app finishes launching.
     * - Parameters:
@@ -30,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       return true
    }
 }
-
 /**
  * The main view controller of the app.
  * - Note: This controller manages the app's main view and is responsible for handling user interactions and updating the view.
@@ -41,14 +39,12 @@ class MainVC: UIViewController {
       view = MainView()
       view.backgroundColor = .orange
    }
-
    /**
     * Returns a Boolean value indicating whether the view controller prefers the status bar to be hidden or shown.
     * - Returns: true if the status bar should be hidden, false otherwise.
     */
    override var prefersStatusBarHidden: Bool { false }
 }
-
 /**
  * The main view of the app.
  * - Note: This view displays the app's user interface and is responsible for rendering the app's content.
@@ -58,8 +54,8 @@ class MainView: UIView {
       super.init(frame: frame)
       let data: TextCellData = .init(description: "", content: "")
       _ = data
+      // - Fixme: ⚠️️ add table and the textcell?
    }
-
    /**
     * Required initializer that is not implemented.
     * - Note: This implementation is marked as unavailable to avoid subsequent warnings to implement this.
