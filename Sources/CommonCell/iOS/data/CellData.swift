@@ -5,9 +5,13 @@
  * - Fixme: Consider renaming CellData to CellValue for clarity.
  */
 public struct CellData: CellDataKind {
-   // The title text for the cell.
+   /**
+    * The title text for the cell
+    */
    public let titleText: String
-   // The value associated with the cell. This can be any type and is optional.
+   /**
+    * The value associated with the cell. This can be any type and is optional
+    */
    public let value: Any?
    /**
     * Initializes a new instance of CellData with the specified title text and value.
