@@ -10,7 +10,6 @@ open class StickyTable: BaseTable {
     * - Note: Set this property to get the callback.
     */
    public var onVerticalScroll: OnVerticalScroll = defaultOnVerticalScroll
-
    /**
     * Initializes a new instance of the table with the specified frame and style.
     * - Parameters:
